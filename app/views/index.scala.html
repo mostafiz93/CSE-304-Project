@@ -1,0 +1,20 @@
+@(signUpForm: play.data.Form[models.Visitor])
+
+@main("Restaurant Database Syatem") {
+	<div class="container">
+		<div class="container" id="sign-up-in-container">
+			<div class="heading-banner">
+				<h4>If you are already a registered member then sign-in to vote a restaurant or food item</h4>
+				<h4>Otherwise please sign-up</h4>
+			</div>
+			<hr/>
+			<form id="sign-up-in">
+				<button type="button" id="sign-up" class="btn btn-primary btn-large btn-block btn-lg" 
+					role="button" data-toggle="modal" data-target="#signUp">Sign Up</button>
+				<p class="or">Or</p>
+				<button type="button" id="sign-in" class="btn btn-default btn-large btn-block btn-lg"
+					role="button" data-toggle="modal" data-target="#signIn">Sign In</button>
+			</form>
+		</div>
+	</div>
+}
