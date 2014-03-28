@@ -26,7 +26,7 @@ public class VisitorEnd extends Controller{
 		Visitor newVisitor = signUpFormFilled.get();
 		newVisitor.save();
 		
-		return ok("New Visitor Registered with : " + newVisitor.toString());
+		return ok("New Visitor Registered with : " +newVisitor.visitorID+" "+ newVisitor.firstname + " " + newVisitor.lastName + " " + newVisitor.password );
 	}
 	
 	public static Result signIn(){
@@ -41,7 +41,7 @@ public class VisitorEnd extends Controller{
 			if(password.equals(newVisitor.password)){
 				session().clear();
 				session("visitorID",String.valueOf(newVisitor.visitorID));
-				return redirect("/showRestaurants");
+				return redirect("http://fb.com");
 			}
 			else 
 				throw new IllegalStateException();

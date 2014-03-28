@@ -35,7 +35,7 @@ Seq[Any](format.raw/*1.1*/("""<div class="modal fade" id="signInModal" tabindex=
 					aria-hidden="true">&times;</button>
 				<h4 class="modal-title" id="signInModalLabel">Sign In</h4>
 			</div>
-			<form class="form-signin" action="/signin" method="POST">
+			<form class="form-signin" action="/signIn" method="POST">
 				<div class="modal-body">
 
 					<p><input type="text" class="form-control" id="visitorID" name="visitorID"
@@ -66,9 +66,9 @@ Seq[Any](format.raw/*1.1*/("""<div class="modal fade" id="signInModal" tabindex=
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 28 03:46:08 ALMT 2014
+                    DATE: Fri Mar 28 23:12:17 ALMT 2014
                     SOURCE: C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/app/views/signInModal.scala.html
-                    HASH: 922525d719e48ee3db23ed07687bf01a62e5a2bd
+                    HASH: 19b2b59beb37c334b9395e421d6c9cc3dde92889
                     MATRIX: 861->0
                     LINES: 29->1
                     -- GENERATED --

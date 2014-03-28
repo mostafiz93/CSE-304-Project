@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/conf/routes
-// @HASH:7e347569c20df59831221569e6361a5761d8b56e
-// @DATE:Fri Mar 28 13:31:10 ALMT 2014
+// @HASH:bbd908d9622d7921543336d1191c731c3238d39b
+// @DATE:Fri Mar 28 18:36:41 ALMT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,6 +13,7 @@ import play.libs.F
 import Router.queryString
 
 
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -47,6 +48,7 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -66,6 +68,7 @@ def signIn(): Call = {
 }
                                                 
 
+// @LINE:17
 // @LINE:16
 // @LINE:5
 def index(): Call = {
@@ -75,6 +78,9 @@ case () if true => Call("GET", _prefix)
                                                         
 // @LINE:16
 case () if true => Call("GET", _prefix + { _defaultPrefix } + "visitor")
+                                                        
+// @LINE:17
+case () if true => Call("GET", _prefix + { _defaultPrefix } + "showRestaurant")
                                                         
    }
 }
@@ -86,6 +92,7 @@ case () if true => Call("GET", _prefix + { _defaultPrefix } + "visitor")
                   
 
 
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -130,6 +137,7 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -159,6 +167,7 @@ def signIn : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:17
 // @LINE:16
 // @LINE:5
 def index : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -171,6 +180,9 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
       if (true) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "visitor"})
       }
+      if (true) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "showRestaurant"})
+      }
       }
    """
 )
@@ -182,6 +194,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14
@@ -217,6 +230,7 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:17
 // @LINE:16
 // @LINE:15
 // @LINE:14

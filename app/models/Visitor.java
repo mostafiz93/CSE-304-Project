@@ -26,7 +26,7 @@ public class Visitor extends Model {
 	@MaxLength(20)
 	public String password;
 	
-	@Required
+	
 	@MinLength(3)
 	@MaxLength(20)
 	public String firstname;

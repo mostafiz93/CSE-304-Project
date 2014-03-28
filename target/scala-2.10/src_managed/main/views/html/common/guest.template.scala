@@ -44,7 +44,9 @@ Seq[Any](format.raw/*1.32*/("""
 </div>
 	
 	"""),_display_(Seq[Any](/*18.3*/content)),format.raw/*18.10*/("""
-	"""),_display_(Seq[Any](/*19.3*/common/*19.9*/.footer())),format.raw/*19.18*/("""
+	
+
+	"""),_display_(Seq[Any](/*21.3*/common/*21.9*/.footer())),format.raw/*21.18*/("""
     
     
     
@@ -63,11 +65,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 28 16:56:01 ALMT 2014
+                    DATE: Fri Mar 28 18:36:04 ALMT 2014
                     SOURCE: C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/app/views/common/guest.scala.html
-                    HASH: 1b568333c3e3c7bbdf06e13d903ded42c7d5339d
-                    MATRIX: 786->1|910->31|981->68|995->74|1028->86|1318->341|1347->348|1385->351|1399->357|1430->366
-                    LINES: 26->1|29->1|34->6|34->6|34->6|46->18|46->18|47->19|47->19|47->19
+                    HASH: 15cae6611f6978e6c55792e03d67066d67d2d9fa
+                    MATRIX: 786->1|910->31|981->68|995->74|1028->86|1318->341|1347->348|1388->354|1402->360|1433->369
+                    LINES: 26->1|29->1|34->6|34->6|34->6|46->18|46->18|49->21|49->21|49->21
                     -- GENERATED --
                 */
             

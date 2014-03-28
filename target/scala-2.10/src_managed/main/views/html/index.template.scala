@@ -36,13 +36,13 @@ Seq[Any](format.raw/*1.46*/("""
 				<h4>If you are not registered please sign-up. Otherwise sign-in to rate your favorite restaurant or food item.</h4>
 			</div>
 			<hr/>
-		
+			<div class="row">
 				<button type="button" id="sign-up" class="btn btn-primary btn-large btn-block btn-lg" 
 					role="button" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
 				<p class="or">Or</p>
 				<button type="button" id="sign-in" class="btn btn-default btn-large btn-block btn-lg"
 					role="button" data-toggle="modal" data-target="#signInModal">Sign In</button>
-			
+			</div>
 		</div>
 	</div>
 	"""),_display_(Seq[Any](/*20.3*/views/*20.8*/.html.signInModal())),format.raw/*20.27*/("""
@@ -59,10 +59,10 @@ Seq[Any](format.raw/*1.46*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 28 17:18:54 ALMT 2014
+                    DATE: Fri Mar 28 23:06:43 ALMT 2014
                     SOURCE: C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/app/views/index.scala.html
-                    HASH: bab25eb790a0ed25afe3dfb003cc97d0bfd31a62
-                    MATRIX: 798->1|936->45|973->48|986->54|1030->90|1069->92|1153->141|1167->147|1223->182|1888->812|1901->817|1942->836|1980->839|1993->844|2044->873
+                    HASH: 87afa701d044e8020f7a2c2896f7659f654d27b4
+                    MATRIX: 798->1|936->45|973->48|986->54|1030->90|1069->92|1153->141|1167->147|1223->182|1912->836|1925->841|1966->860|2004->863|2017->868|2068->897
                     LINES: 26->1|29->1|31->3|31->3|31->3|31->3|33->5|33->5|33->5|48->20|48->20|48->20|49->21|49->21|49->21
                     -- GENERATED --
                 */

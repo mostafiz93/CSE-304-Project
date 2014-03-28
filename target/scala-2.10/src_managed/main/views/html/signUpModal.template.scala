@@ -44,38 +44,31 @@ Seq[Any](format.raw/*1.46*/("""
 						 '_showConstraints -> false, 
 						 '_class -> "no-dt")/*17.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*17.56*/("""
 							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*18.55*/name)),format.raw/*18.59*/("""" id=""""),_display_(Seq[Any](/*18.66*/id)),format.raw/*18.68*/(""""
-							placeholder="visitorID">
+							placeholder="Visitor ID">
 					""")))})),format.raw/*20.7*/("""
 					
-					<!-- """),_display_(Seq[Any](/*22.12*/helper/*22.18*/.input(signUpForm("password"),
+					
+					"""),_display_(Seq[Any](/*23.7*/helper/*23.13*/.input(signUpForm("firstName"),
 						 '_showConstraints -> false, 
-						 '_class -> "no-dt")/*24.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*24.56*/("""
-							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*25.55*/name)),format.raw/*25.59*/("""" id=""""),_display_(Seq[Any](/*25.66*/id)),format.raw/*25.68*/(""""
-							placeholder="password"> -->
-					""")))})),format.raw/*27.7*/("""
+						 '_class -> "no-dt")/*25.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*25.56*/("""
+							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*26.55*/name)),format.raw/*26.59*/("""" id=""""),_display_(Seq[Any](/*26.66*/id)),format.raw/*26.68*/(""""
+							placeholder="First Name">
+					""")))})),format.raw/*28.7*/("""
 					
-					
-					"""),_display_(Seq[Any](/*30.7*/helper/*30.13*/.input(signUpForm("firstName"),
+					"""),_display_(Seq[Any](/*30.7*/helper/*30.13*/.input(signUpForm("lastName"),
 						 '_showConstraints -> false, 
 						 '_class -> "no-dt")/*32.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*32.56*/("""
 							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*33.55*/name)),format.raw/*33.59*/("""" id=""""),_display_(Seq[Any](/*33.66*/id)),format.raw/*33.68*/(""""
-							placeholder="firstName">
+							placeholder="Last Name">
 					""")))})),format.raw/*35.7*/("""
 					
-					"""),_display_(Seq[Any](/*37.7*/helper/*37.13*/.input(signUpForm("lastName"),
-						 '_showConstraints -> false, 
-						 '_class -> "no-dt")/*39.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*39.56*/("""
-							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*40.55*/name)),format.raw/*40.59*/("""" id=""""),_display_(Seq[Any](/*40.66*/id)),format.raw/*40.68*/(""""
-							placeholder="lastName">
-					""")))})),format.raw/*42.7*/("""
 					
-					
-					<!-- """),_display_(Seq[Any](/*45.12*/helper/*45.18*/.input(signUpForm("email"),
+					<!-- """),_display_(Seq[Any](/*38.12*/helper/*38.18*/.input(signUpForm("email"),
 						 '_showConstraints -> false,
-						 '_class -> "no-dt")/*47.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*47.56*/("""
-							<input type="email" class="form-control" name=""""),_display_(Seq[Any](/*48.56*/name)),format.raw/*48.60*/("""" id=""""),_display_(Seq[Any](/*48.67*/id)),format.raw/*48.69*/(""""
+						 '_class -> "no-dt")/*40.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*40.56*/("""
+							<input type="email" class="form-control" name=""""),_display_(Seq[Any](/*41.56*/name)),format.raw/*41.60*/("""" id=""""),_display_(Seq[Any](/*41.67*/id)),format.raw/*41.69*/(""""
 							placeholder="Email">
-					""")))})),format.raw/*50.7*/(""" -->
+					""")))})),format.raw/*43.7*/(""" -->
 
 					
 					<p><input type="password" class="form-control" placeholder="Password"
@@ -87,7 +80,7 @@ Seq[Any](format.raw/*1.46*/("""
 				<div class="modal-footer">
 					<button type="submit" class="btn btn-success">Sign Up</button>
 				</div>
-			""")))})),format.raw/*62.5*/("""
+			""")))})),format.raw/*55.5*/("""
 		</div>
 	</div>
 </div>"""))}
@@ -102,11 +95,11 @@ Seq[Any](format.raw/*1.46*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 28 16:47:34 ALMT 2014
+                    DATE: Fri Mar 28 23:13:02 ALMT 2014
                     SOURCE: C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/app/views/signUpModal.scala.html
-                    HASH: 8187044c8f79dfaaf8c873f449ab4a889fc1af78
-                    MATRIX: 804->1|942->45|1382->450|1397->456|1460->510|1500->512|1575->552|1590->558|1695->654|1762->683|1854->739|1880->743|1923->750|1947->752|2020->794|2076->814|2091->820|2195->915|2262->944|2354->1000|2380->1004|2423->1011|2447->1013|2523->1058|2580->1080|2595->1086|2700->1182|2767->1211|2859->1267|2885->1271|2928->1278|2952->1280|3025->1322|3075->1337|3090->1343|3194->1438|3261->1467|3353->1523|3379->1527|3422->1534|3446->1536|3518->1577|3581->1604|3596->1610|3696->1701|3763->1730|3856->1787|3882->1791|3925->1798|3949->1800|4018->1838|4440->2229
-                    LINES: 26->1|29->1|40->12|40->12|40->12|40->12|43->15|43->15|45->17|45->17|46->18|46->18|46->18|46->18|48->20|50->22|50->22|52->24|52->24|53->25|53->25|53->25|53->25|55->27|58->30|58->30|60->32|60->32|61->33|61->33|61->33|61->33|63->35|65->37|65->37|67->39|67->39|68->40|68->40|68->40|68->40|70->42|73->45|73->45|75->47|75->47|76->48|76->48|76->48|76->48|78->50|90->62
+                    HASH: 645f54cdd4599589f5ee25d35b93c0d7d5cd6a38
+                    MATRIX: 804->1|942->45|1382->450|1397->456|1460->510|1500->512|1575->552|1590->558|1695->654|1762->683|1854->739|1880->743|1923->750|1947->752|2021->795|2078->817|2093->823|2198->919|2265->948|2357->1004|2383->1008|2426->1015|2450->1017|2524->1060|2574->1075|2589->1081|2693->1176|2760->1205|2852->1261|2878->1265|2921->1272|2945->1274|3018->1316|3081->1343|3096->1349|3196->1440|3263->1469|3356->1526|3382->1530|3425->1537|3449->1539|3518->1577|3940->1968
+                    LINES: 26->1|29->1|40->12|40->12|40->12|40->12|43->15|43->15|45->17|45->17|46->18|46->18|46->18|46->18|48->20|51->23|51->23|53->25|53->25|54->26|54->26|54->26|54->26|56->28|58->30|58->30|60->32|60->32|61->33|61->33|61->33|61->33|63->35|66->38|66->38|68->40|68->40|69->41|69->41|69->41|69->41|71->43|83->55
                     -- GENERATED --
                 */
             
