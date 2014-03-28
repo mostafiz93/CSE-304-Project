@@ -1,0 +1,73 @@
+
+package views.html.common
+
+import play.templates._
+import play.templates.TemplateMagic._
+
+import play.api.templates._
+import play.api.templates.PlayMagic._
+import models._
+import controllers._
+import java.lang._
+import java.util._
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
+import play.api.i18n._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.data._
+import play.api.data.Field
+import play.mvc.Http.Context.Implicit._
+import views.html._
+/**/
+object guest extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[String,Html,play.api.templates.HtmlFormat.Appendable] {
+
+    /**/
+    def apply/*1.2*/(title: String)(content: Html):play.api.templates.HtmlFormat.Appendable = {
+        _display_ {
+
+Seq[Any](format.raw/*1.32*/("""
+
+<!DOCTYPE html>
+<html>
+<head>
+    """),_display_(Seq[Any](/*6.6*/common/*6.12*/.head(title))),format.raw/*6.24*/(""" 
+</head>
+<body>
+    
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Restaurant Database System</a>
+    </div>
+  </div>
+</div>
+	
+	"""),_display_(Seq[Any](/*18.3*/content)),format.raw/*18.10*/("""
+	"""),_display_(Seq[Any](/*19.3*/common/*19.9*/.footer())),format.raw/*19.18*/("""
+    
+    
+    
+</body>
+
+
+</html>"""))}
+    }
+    
+    def render(title:String,content:Html): play.api.templates.HtmlFormat.Appendable = apply(title)(content)
+    
+    def f:((String) => (Html) => play.api.templates.HtmlFormat.Appendable) = (title) => (content) => apply(title)(content)
+    
+    def ref: this.type = this
+
+}
+                /*
+                    -- GENERATED --
+                    DATE: Fri Mar 28 16:56:01 ALMT 2014
+                    SOURCE: C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/app/views/common/guest.scala.html
+                    HASH: 1b568333c3e3c7bbdf06e13d903ded42c7d5339d
+                    MATRIX: 786->1|910->31|981->68|995->74|1028->86|1318->341|1347->348|1385->351|1399->357|1430->366
+                    LINES: 26->1|29->1|34->6|34->6|34->6|46->18|46->18|47->19|47->19|47->19
+                    -- GENERATED --
+                */
+            
