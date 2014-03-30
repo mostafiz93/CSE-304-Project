@@ -70,10 +70,10 @@ Seq[Any](format.raw/*1.17*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Fri Mar 28 03:18:02 ALMT 2014
-                    SOURCE: C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/app/views/common/navbar.scala.html
-                    HASH: b5f1838687baecb485af9084b17ffe4490303a39
-                    MATRIX: 782->1|891->16|1125->215|1139->221|1199->260
+                    DATE: Sat Mar 29 06:59:52 ALMT 2014
+                    SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/common/navbar.scala.html
+                    HASH: bec172bb9d11fbf125e3d4b2bf804b18946fe7ee
+                    MATRIX: 782->1|891->16|1130->220|1144->226|1204->265
                     LINES: 26->1|29->1|34->6|34->6|34->6
                     -- GENERATED --
                 */

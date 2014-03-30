@@ -1,16 +1,208 @@
-2014-03-28 23:13:11,676 - [INFO] - from play in pool-13-thread-2 
+2014-03-29 09:12:38,593 - [INFO] - from play in pool-16-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-03-28 23:13:13,596 - [INFO] - from play in play-internal-execution-context-1 
+2014-03-29 09:12:40,079 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2014-03-28 23:13:13,744 - [INFO] - from play in play-internal-execution-context-1 
+2014-03-29 09:12:40,284 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2014-03-28 23:13:14,416 - [ERROR] - from application in New I/O worker #1 
+2014-03-29 09:12:40,841 - [ERROR] - from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in play-internal-execution-context-1 
+Error in deployment
+java.lang.RuntimeException: Error reading annotations for models.Restaurant
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readDeployAssociations(BeanDescriptorManager.java:1048) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentAssociations(BeanDescriptorManager.java:547) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:237) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:114) [avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:204) [avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:65) [avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:58) [avaje-ebeanorm-3.2.2.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:79) [play-java-ebean_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) [scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$.start(Play.scala:87) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) [scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.util.Success.flatMap(Try.scala:200) [scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
+Caused by: java.lang.RuntimeException: Error with association to [class models.Franchise] from [models.Restaurant.franchise]. Is class models.Franchise registered?
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readManyToOne(AnnotationAssocOnes.java:165) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readAssocOne(AnnotationAssocOnes.java:63) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.parse(AnnotationAssocOnes.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:45) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 31 common frames omitted
+
+2014-03-29 09:12:40,848 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6hl31h42e - Internal server error, for (GET) [/] ->
+! @6hl629cn0 - Internal server error, for (GET) [/] ->
+
+play.api.UnexpectedException: Unexpected exception[RuntimeException: Error reading annotations for models.Restaurant]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:148) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+Caused by: java.lang.RuntimeException: Error reading annotations for models.Restaurant
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readDeployAssociations(BeanDescriptorManager.java:1048) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentAssociations(BeanDescriptorManager.java:547) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:237) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:114) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:204) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:65) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:58) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:79) ~[play-java-ebean_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
+	... 14 common frames omitted
+Caused by: java.lang.RuntimeException: Error with association to [class models.Franchise] from [models.Restaurant.franchise]. Is class models.Franchise registered?
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readManyToOne(AnnotationAssocOnes.java:165) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readAssocOne(AnnotationAssocOnes.java:63) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.parse(AnnotationAssocOnes.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:45) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 31 common frames omitted
+
+2014-03-29 09:14:09,945 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-03-29 09:14:09,954 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-03-29 09:14:10,133 - [ERROR] - from com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager in play-internal-execution-context-1 
+Error in deployment
+java.lang.RuntimeException: Error reading annotations for models.Restaurant
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readDeployAssociations(BeanDescriptorManager.java:1048) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentAssociations(BeanDescriptorManager.java:547) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:237) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:114) [avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:204) [avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:65) [avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:58) [avaje-ebeanorm-3.2.2.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:79) [play-java-ebean_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) [scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) [play_2.10-2.2.1.jar:2.2.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) [play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$.start(Play.scala:87) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) [scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.util.Success.flatMap(Try.scala:200) [scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) [play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) [play_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
+Caused by: java.lang.RuntimeException: Error with association to [class models.Franchise] from [models.Restaurant.franchise]. Is class models.Franchise registered?
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readManyToOne(AnnotationAssocOnes.java:165) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readAssocOne(AnnotationAssocOnes.java:63) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.parse(AnnotationAssocOnes.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:45) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 31 common frames omitted
+
+2014-03-29 09:14:10,141 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6hl62eep9 - Internal server error, for (GET) [/] ->
+
+play.api.UnexpectedException: Unexpected exception[RuntimeException: Error reading annotations for models.Restaurant]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:148) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+Caused by: java.lang.RuntimeException: Error reading annotations for models.Restaurant
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readDeployAssociations(BeanDescriptorManager.java:1048) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.readEntityDeploymentAssociations(BeanDescriptorManager.java:547) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.BeanDescriptorManager.deploy(BeanDescriptorManager.java:237) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.InternalConfiguration.<init>(InternalConfiguration.java:114) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:204) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.core.DefaultServerFactory.createServer(DefaultServerFactory.java:65) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebean.EbeanServerFactory.create(EbeanServerFactory.java:58) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at play.db.ebean.EbeanPlugin.onStart(EbeanPlugin.java:79) ~[play-java-ebean_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
+	... 14 common frames omitted
+Caused by: java.lang.RuntimeException: Error with association to [class models.Franchise] from [models.Restaurant.franchise]. Is class models.Franchise registered?
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readManyToOne(AnnotationAssocOnes.java:165) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.readAssocOne(AnnotationAssocOnes.java:63) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.AnnotationAssocOnes.parse(AnnotationAssocOnes.java:54) ~[avaje-ebeanorm-3.2.2.jar:na]
+	at com.avaje.ebeaninternal.server.deploy.parse.ReadAnnotations.readAssociations(ReadAnnotations.java:45) ~[avaje-ebeanorm-3.2.2.jar:na]
+	... 31 common frames omitted
+
+2014-03-29 09:15:18,733 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-03-29 09:15:18,737 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-03-29 09:15:19,201 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6hl62id3f - Internal server error, for (GET) [/] ->
 
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[play-jdbc_2.10-2.2.1.jar:2.2.1]
@@ -43,12 +235,72 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
 
-2014-03-28 23:13:16,502 - [INFO] - from play in play-internal-execution-context-1 
+2014-03-29 09:15:56,461 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2014-03-28 23:13:16,504 - [INFO] - from play in play-internal-execution-context-1 
+2014-03-29 09:15:56,466 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2014-03-28 23:13:16,746 - [INFO] - from play in play-internal-execution-context-1 
+2014-03-29 09:15:56,654 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-03-29 10:03:35,516 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-03-29 10:03:35,519 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-03-29 10:03:35,728 - [ERROR] - from application in New I/O worker #7 
+
+
+! @6hl6917oc - Internal server error, for (GET) [/] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[play-jdbc_2.10-2.2.1.jar:2.2.1]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:507) ~[play-jdbc_2.10-2.2.1.jar:2.2.1]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:461) ~[play-jdbc_2.10-2.2.1.jar:2.2.1]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:459) ~[play-jdbc_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:459) ~[play-jdbc_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.1.jar:2.2.1]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.1.jar:2.2.1]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2014-03-29 10:04:21,866 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-03-29 10:04:21,869 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-03-29 10:04:22,050 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-03-29 10:09:07,177 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-03-29 10:09:07,180 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-03-29 10:09:07,365 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

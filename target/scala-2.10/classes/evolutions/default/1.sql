@@ -3,6 +3,32 @@
 
 # --- !Ups
 
+create table area (
+  id                        bigint not null,
+  area_name                 varchar(255),
+  constraint pk_area primary key (id))
+;
+
+create table franchise (
+  id                        bigint not null,
+  franchise_title           varchar(255),
+  email                     varchar(255),
+  phone                     varchar(255),
+  address                   varchar(255),
+  constraint pk_franchise primary key (id))
+;
+
+create table restaurant (
+  id                        bigint not null,
+  name                      varchar(255),
+  email                     varchar(255),
+  phone                     varchar(255),
+  address                   varchar(255),
+  franchise_id              bigint,
+  area_id                   bigint,
+  constraint pk_restaurant primary key (id))
+;
+
 create table visitor (
   visitor_id                varchar(255) not null,
   password                  varchar(255),
@@ -19,8 +45,18 @@ create table visitor (
   constraint pk_visitor primary key (visitor_id))
 ;
 
+create sequence area_seq;
+
+create sequence franchise_seq;
+
+create sequence restaurant_seq;
+
 create sequence visitor_seq;
 
+alter table restaurant add constraint fk_restaurant_franchise_1 foreign key (franchise_id) references franchise (id) on delete restrict on update restrict;
+create index ix_restaurant_franchise_1 on restaurant (franchise_id);
+alter table restaurant add constraint fk_restaurant_area_2 foreign key (area_id) references area (id) on delete restrict on update restrict;
+create index ix_restaurant_area_2 on restaurant (area_id);
 
 
 
@@ -28,9 +64,21 @@ create sequence visitor_seq;
 
 SET REFERENTIAL_INTEGRITY FALSE;
 
+drop table if exists area;
+
+drop table if exists franchise;
+
+drop table if exists restaurant;
+
 drop table if exists visitor;
 
 SET REFERENTIAL_INTEGRITY TRUE;
+
+drop sequence if exists area_seq;
+
+drop sequence if exists franchise_seq;
+
+drop sequence if exists restaurant_seq;
 
 drop sequence if exists visitor_seq;
 
