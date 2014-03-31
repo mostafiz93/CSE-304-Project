@@ -8,7 +8,8 @@ GET     /                           controllers.VisitorEnd.index()
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 GET     /webjars/*file              controllers.WebJarAssets.at(file)
 
-
+#restaurants
+POST	/createRestaurant			controllers.restaurant.RestaurantController.addRestaurant()
 
 #visitor 
 POST 	/signUp						controllers.VisitorEnd.signUp()

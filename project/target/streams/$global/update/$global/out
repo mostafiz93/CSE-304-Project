@@ -1,11 +1,11 @@
-[info] Updating {file:/C:/Users/mostafiz/workspace/RestaurantDatabaseSystem/project/}restaurantdatabasesystem-build...
-[debug] :: resolving dependencies :: default#restaurantdatabasesystem-build;0.1-SNAPSHOT
+[info] Updating {file:/C:/Users/User/Documents/GitHub/CSE-304-Project/project/}cse-304-project-build...
+[debug] :: resolving dependencies :: default#cse-304-project-build;0.1-SNAPSHOT
 [debug] 	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool]
 [debug] 	validate = true
 [debug] 	refresh = false
 [debug] resolving dependencies for configuration 'compile'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
 [info] Resolving com.typesafe.sbt#sbt-atmos;0.3.2 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-atmos;0.3.2 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: com.typesafe.sbt#sbt-atmos;0.3.2
@@ -20,7 +20,7 @@
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->compile]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
 [info] Resolving com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0
@@ -67,14 +67,14 @@
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
 [info] Resolving com.github.mpeltonen#sbt-idea;1.5.2 ...
 [debug] sbt-chain: Checking cache for: dependency: com.github.mpeltonen#sbt-idea;1.5.2 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: com.github.mpeltonen#sbt-idea;1.5.2
 [debug] 	typesafe-ivy-releases: revision in cache: com.github.mpeltonen#sbt-idea;1.5.2
 [debug] 	found com.github.mpeltonen#sbt-idea;1.5.2 in sbt-chain
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
 [info] Resolving commons-io#commons-io;2.0.1 ...
 [debug] sbt-chain: Checking cache for: dependency: commons-io#commons-io;2.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -84,8 +84,8 @@
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
 [info] Resolving com.typesafe.play#sbt-plugin;2.2.1 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#sbt-plugin;2.2.1 {compile=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: com.typesafe.play#sbt-plugin;2.2.1
@@ -493,14 +493,14 @@
 [debug] == resolving dependencies org.specs2#specs2_2.10;2.1.1->org.scalaz#scalaz-concurrent_2.10;7.0.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->org.specs2#specs2_2.10;2.1.1 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->compile]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime]
@@ -522,15 +522,15 @@
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->compile]
@@ -764,15 +764,15 @@
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->org.specs2#specs2_2.10;2.1.1 [compile->master]
 [debug] resolving dependencies for configuration 'test'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->compile]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime]
@@ -794,15 +794,15 @@
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->compile]
@@ -1036,12 +1036,12 @@
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->org.specs2#specs2_2.10;2.1.1 [compile->master]
 [debug] resolving dependencies for configuration 'provided'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.0 [provided->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.0 [provided->default(compile)]
 [info] Resolving org.scala-sbt#sbt;0.13.0 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#sbt;0.13.0 {provided=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-sbt#sbt;0.13.0
@@ -1564,16 +1564,16 @@
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-lang#scala-library;2.10.2 [compile->compile]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-lang#scala-library;2.10.2 [compile->master]
 [debug] resolving dependencies for configuration 'optional'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'compile-internal'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [compile-internal]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [compile-internal]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->compile]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime]
@@ -1601,15 +1601,15 @@
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->compile]
@@ -1842,13 +1842,13 @@
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->org.specs2#specs2_2.10;2.1.1 [compile->master]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.0 [provided->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.0 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-sbt#main;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#main;0.13.0->org.scala-sbt#actions;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#actions;0.13.0->org.scala-sbt#classpath;0.13.0 [compile->default(compile)]
@@ -2160,15 +2160,15 @@
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-lang#scala-library;2.10.2 [compile->compile]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-lang#scala-library;2.10.2 [compile->master]
 [debug] resolving dependencies for configuration 'runtime-internal'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [runtime-internal]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [runtime-internal]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->compile]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime]
@@ -2190,15 +2190,15 @@
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.1 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->compile]
@@ -2431,18 +2431,18 @@
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->org.specs2#specs2_2.10;2.1.1 [compile->master]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [optional]
 [debug] resolving dependencies for configuration 'test-internal'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [test-internal]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [test]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [runtime]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [test-internal]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [test]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [runtime]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-atmos;0.3.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->compile]
 [debug] == resolving dependencies com.typesafe.sbt#sbt-atmos;0.3.2->org.aspectj#aspectjtools;1.7.3 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-plugin;2.3.0->com.typesafe.sbteclipse#sbteclipse-core;2.3.0 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-core_2.10;7.0.2 [compile->runtime]
@@ -2470,15 +2470,15 @@
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-effect_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.sbteclipse#sbteclipse-core;2.3.0->org.scalaz#scalaz-effect_2.10;7.0.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->compile]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->master(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [compile->compile(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->runtime(*)]
 [debug] == resolving dependencies com.github.mpeltonen#sbt-idea;1.5.2->commons-io#commons-io;2.0.1 [runtime->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.github.mpeltonen#sbt-idea;1.5.2 [compile->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->com.typesafe.play#sbt-plugin;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->default(compile)]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->runtime]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->com.typesafe.play#sbt-link;2.2.1 [compile->compile]
@@ -2711,13 +2711,13 @@
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scalaz#scalaz-concurrent_2.10;7.0.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
 [debug] == resolving dependencies com.typesafe.play#sbt-plugin;2.2.1->org.specs2#specs2_2.10;2.1.1 [compile->master]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [optional]
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [provided]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->default(compile)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.0 [provided->default(compile)]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [optional]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [provided]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->default(compile)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [provided->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-sbt#sbt;0.13.0 [provided->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-sbt#main;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#main;0.13.0->org.scala-sbt#actions;0.13.0 [compile->default(compile)]
 [debug] == resolving dependencies org.scala-sbt#actions;0.13.0->org.scala-sbt#classpath;0.13.0 [compile->default(compile)]
@@ -3029,18 +3029,18 @@
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-lang#scala-library;2.10.2 [compile->compile]
 [debug] == resolving dependencies org.scala-sbt#sbt;0.13.0->org.scala-lang#scala-library;2.10.2 [compile->master]
 [debug] resolving dependencies for configuration 'plugin'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [plugin]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [plugin]
 [debug] resolving dependencies for configuration 'sources'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [sources]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [sources]
 [debug] resolving dependencies for configuration 'docs'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [docs]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [docs]
 [debug] resolving dependencies for configuration 'pom'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [pom]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [pom]
 [debug] resolving dependencies for configuration 'scala-tool'
-[debug] == resolving dependencies for default#restaurantdatabasesystem-build;0.1-SNAPSHOT [scala-tool]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->default]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->compile]
+[debug] == resolving dependencies for default#cse-304-project-build;0.1-SNAPSHOT [scala-tool]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->default]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->compile]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->master(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->compile(*)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->default]
@@ -3058,8 +3058,8 @@
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [runtime->compile]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)]
 [debug] == resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [runtime->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->optional(default)]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->optional(default)]
 [debug] == resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#jline;2.10.2 [optional->master(*)]
 [info] Resolving org.scala-lang#jline;2.10.2 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.2 {optional=[compile(*), master(*)]}
@@ -3074,12 +3074,12 @@
 [debug] 	typesafe-ivy-releases: revision in cache: org.fusesource.jansi#jansi;1.4
 [debug] 	found org.fusesource.jansi#jansi;1.4 in sbt-chain
 [debug] == resolving dependencies org.scala-lang#jline;2.10.2->org.fusesource.jansi#jansi;1.4 [compile->compile(*)]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->default]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->runtime]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->compile]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->master]
-[debug] == resolving dependencies default#restaurantdatabasesystem-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->optional(default)]
-[debug] 	resolved ivy file produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\default\restaurantdatabasesystem-build\scala_2.10\sbt_0.13\0.1-SNAPSHOT\resolved.xml.xml
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->default]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->runtime]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->compile]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->master]
+[debug] == resolving dependencies default#cse-304-project-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->optional(default)]
+[debug] 	resolved ivy file produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\default\cse-304-project-build\scala_2.10\sbt_0.13\0.1-SNAPSHOT\resolved.xml.xml
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-atmos;0.3.2!sbt-atmos.jar
 [debug] 	[NOT REQUIRED] com.github.mpeltonen#sbt-idea;1.5.2!sbt-idea.jar
@@ -3160,19 +3160,19 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.0!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 1747ms :: artifacts dl 86ms
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT compile produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-compile.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT runtime produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-runtime.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT test produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-test.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT provided produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-provided.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT optional produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-optional.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT compile-internal produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-compile-internal.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-runtime-internal.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT test-internal produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-test-internal.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT plugin produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-plugin.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT sources produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-sources.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT docs produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-docs.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT pom produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-pom.xml
-[debug] 	report for default#restaurantdatabasesystem-build;0.1-SNAPSHOT scala-tool produced in C:\Users\mostafiz\workspace\RestaurantDatabaseSystem\project\target\resolution-cache\reports\default-restaurantdatabasesystem-build-scala-tool.xml
-[debug] 	resolve done (1747ms resolve - 86ms download)
+[debug] :: resolution report :: resolve 5442ms :: artifacts dl 385ms
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT compile produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-compile.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT runtime produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-runtime.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT test produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-test.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT provided produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-provided.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT optional produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-optional.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT compile-internal produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-compile-internal.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT runtime-internal produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-runtime-internal.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT test-internal produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-test-internal.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT plugin produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-plugin.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT sources produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-sources.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT docs produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-docs.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT pom produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-pom.xml
+[debug] 	report for default#cse-304-project-build;0.1-SNAPSHOT scala-tool produced in C:\Users\User\Documents\GitHub\CSE-304-Project\project\target\resolution-cache\reports\default-cse-304-project-build-scala-tool.xml
+[debug] 	resolve done (5442ms resolve - 385ms download)
 [info] Done updating.

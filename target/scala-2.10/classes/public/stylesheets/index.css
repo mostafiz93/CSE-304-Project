@@ -41,9 +41,8 @@ img#main {
 }
 div#sign-up-in-container {
   padding-top: 15%;
-  align: center;
   text-align: center;
-  width: 100%;
+  width: 30%;
   overflow: hidden;
   height: 90%;
   float: none;
@@ -51,7 +50,7 @@ div#sign-up-in-container {
 form#sign-up-in {
   padding-top: 10%;
   align: center;
-  width: 10%;
+  width: 100%;
 }
 .footer {
   height: 10%;
