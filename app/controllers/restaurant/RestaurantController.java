@@ -18,10 +18,10 @@ public class RestaurantController extends Controller{
 		
 		Visitor creator = Visitor.find.byId(Long.parseLong(session("userId")));
 		
+		return ok(
+				views.html.restaurant.createRestaurant.render(creator,restaurantForm)
+				);
 		
-		
-		return ok(views.html.restaurant.createRestaurant.render(restaurantForm));
-		//return ok(views.html.bill.createBill.render(billForm, asScalaBuffer(Apartment.find.all())));
 	}
 	
 	public static Result addRestaurant(){
