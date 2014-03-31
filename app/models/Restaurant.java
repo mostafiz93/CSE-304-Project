@@ -19,7 +19,12 @@ import play.db.ebean.Model;
 @Entity
 public class Restaurant extends Model {
 
-	private static final long serialVersionUID = -888907934350076591L;
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5132944464965863623L;
 
 	@Id 
 	@GeneratedValue
@@ -27,6 +32,8 @@ public class Restaurant extends Model {
 	
 	@Required
 	public String name;
+	
+	public double overallRating;
 	
 	@Required
 	@Min(5)
@@ -48,7 +55,15 @@ public class Restaurant extends Model {
 	
 	@Valid
 	@ManyToOne(fetch=FetchType.LAZY)
+	public Visitor creator;
+	
+	@Valid
+	@ManyToOne(fetch=FetchType.LAZY)
 	public Area area;
+	
+	@Valid
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="restaurant", cascade=CascadeType.ALL)
+	public List<RestaurantFood> RestaurantsFood;
 	
 	public static Finder<Long, Restaurant> find = 
 			new Finder<Long, Restaurant> (Long.class, Restaurant.class);

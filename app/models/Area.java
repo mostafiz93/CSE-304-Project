@@ -18,7 +18,11 @@ import play.db.ebean.Model;
 @Entity
 public class Area extends Model {
 
-	private static final long serialVersionUID = -1531581245963642355L;
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7085738699443721389L;
 
 	@Id
 	@GeneratedValue

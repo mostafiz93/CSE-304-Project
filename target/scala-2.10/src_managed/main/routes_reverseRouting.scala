@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/User/Documents/GitHub/CSE-304-Project/conf/routes
-// @HASH:bdcdfb0a5c413868fee3e8430f1878d9a0d8862b
-// @DATE:Sat Mar 29 06:59:49 ALMT 2014
+// @HASH:55a3ee7d1c456f5300eb064ac1339dbaffe89863
+// @DATE:Mon Mar 31 09:48:47 ALMT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,10 +13,10 @@ import play.libs.F
 import Router.queryString
 
 
+// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
-// @LINE:14
 // @LINE:9
 // @LINE:8
 // @LINE:5
@@ -48,38 +48,38 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
-// @LINE:14
 // @LINE:5
 class ReverseVisitorEnd {
     
 
-// @LINE:14
+// @LINE:15
 def signUp(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "signUp")
 }
                                                 
 
-// @LINE:15
+// @LINE:16
 def signIn(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "signIn")
 }
                                                 
 
+// @LINE:18
 // @LINE:17
-// @LINE:16
 // @LINE:5
 def index(): Call = {
    () match {
 // @LINE:5
 case () if true => Call("GET", _prefix)
                                                         
-// @LINE:16
+// @LINE:17
 case () if true => Call("GET", _prefix + { _defaultPrefix } + "visitor")
                                                         
-// @LINE:17
+// @LINE:18
 case () if true => Call("GET", _prefix + { _defaultPrefix } + "showRestaurant")
                                                         
    }
@@ -91,11 +91,29 @@ case () if true => Call("GET", _prefix + { _defaultPrefix } + "showRestaurant")
 }
                   
 
+// @LINE:12
+package controllers.restaurant {
 
+// @LINE:12
+class ReverseRestaurantController {
+    
+
+// @LINE:12
+def addRestaurant(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "createRestaurant")
+}
+                                                
+    
+}
+                          
+}
+                  
+
+
+// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
-// @LINE:14
 // @LINE:9
 // @LINE:8
 // @LINE:5
@@ -137,15 +155,15 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
-// @LINE:14
 // @LINE:5
 class ReverseVisitorEnd {
     
 
-// @LINE:14
+// @LINE:15
 def signUp : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.VisitorEnd.signUp",
    """
@@ -156,7 +174,7 @@ def signUp : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:15
+// @LINE:16
 def signIn : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.VisitorEnd.signIn",
    """
@@ -167,8 +185,8 @@ def signIn : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
+// @LINE:18
 // @LINE:17
-// @LINE:16
 // @LINE:5
 def index : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.VisitorEnd.index",
@@ -193,11 +211,34 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:12
+package controllers.restaurant.javascript {
 
+// @LINE:12
+class ReverseRestaurantController {
+    
+
+// @LINE:12
+def addRestaurant : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.restaurant.RestaurantController.addRestaurant",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "createRestaurant"})
+      }
+   """
+)
+                        
+    
+}
+              
+}
+        
+
+
+// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
-// @LINE:14
 // @LINE:9
 // @LINE:8
 // @LINE:5
@@ -230,21 +271,21 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:18
 // @LINE:17
 // @LINE:16
 // @LINE:15
-// @LINE:14
 // @LINE:5
 class ReverseVisitorEnd {
     
 
-// @LINE:14
+// @LINE:15
 def signUp(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.VisitorEnd.signUp(), HandlerDef(this, "controllers.VisitorEnd", "signUp", Seq(), "POST", """visitor """, _prefix + """signUp""")
 )
                       
 
-// @LINE:15
+// @LINE:16
 def signIn(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.VisitorEnd.signIn(), HandlerDef(this, "controllers.VisitorEnd", "signIn", Seq(), "POST", """""", _prefix + """signIn""")
 )
@@ -253,6 +294,25 @@ def signIn(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 // @LINE:5
 def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.VisitorEnd.index(), HandlerDef(this, "controllers.VisitorEnd", "index", Seq(), "GET", """""", _prefix + """""")
+)
+                      
+    
+}
+                          
+}
+        
+
+// @LINE:12
+package controllers.restaurant.ref {
+
+
+// @LINE:12
+class ReverseRestaurantController {
+    
+
+// @LINE:12
+def addRestaurant(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.restaurant.RestaurantController.addRestaurant(), HandlerDef(this, "controllers.restaurant.RestaurantController", "addRestaurant", Seq(), "POST", """restaurants""", _prefix + """createRestaurant""")
 )
                       
     

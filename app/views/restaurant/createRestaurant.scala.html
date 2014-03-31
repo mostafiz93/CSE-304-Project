@@ -1,0 +1,51 @@
+@(restaurantForm: play.data.Form[models.Restaurant])
+
+<div class="modal fade" id="createRestaurant" tabindex="-1" role="dialog"
+	aria-labelledby="createRestaurantLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="createRestaurantLabel">Sign Up</h4>
+			</div>
+			@helper.form(action = controllers.restaurant.routes.RestaurantController.addRestaurant()) {
+				<div class="modal-body">
+
+					@helper.input(restaurantForm("name"),
+						 '_showConstraints -> false, 
+						 '_class -> "no-dt") { (id, name, value, args) =>
+							<input type="text" class="form-control" name="@name" id="@id"
+							placeholder="Name">
+					}
+					
+					@helper.input(restaurantForm("email"),
+						 '_showConstraints -> false,
+						 '_class -> "no-dt") { (id, name, value, args) =>
+							<input type="email" class="form-control" name="@name" id="@id"
+							placeholder="Email">
+					}
+					
+					@helper.input(restaurantForm("phone"),
+						 '_showConstraints -> false,
+						 '_class -> "no-dt") { (id, name, value, args) =>
+							<input type="tel" class="form-control" name="@name" id="@id"
+							placeholder="Phone">
+					}
+					
+					@helper.input(restaurantForm("Address"),
+						 '_showConstraints -> false,
+						 '_class -> "no-dt") { (id, name, value, args) =>
+							<input type="text" class="form-control" name="@name" id="@id"
+							placeholder="Phone">
+					}
+					
+					
+				</div>
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-success">Sign Up</button>
+				</div>
+			}
+		</div>
+	</div>
+</div>

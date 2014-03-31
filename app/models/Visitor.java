@@ -16,6 +16,12 @@ import play.db.ebean.Model;
 @Entity
 public class Visitor extends Model {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4595847696005459822L;
+
+
 	@Id
 	@MaxLength(50)
 	public String visitorID;
