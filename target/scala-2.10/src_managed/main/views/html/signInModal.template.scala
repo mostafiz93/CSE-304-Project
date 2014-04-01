@@ -66,7 +66,7 @@ Seq[Any](format.raw/*1.1*/("""<div class="modal fade" id="signInModal" tabindex=
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 04:56:19 ALMT 2014
+                    DATE: Tue Apr 01 09:50:10 ALMT 2014
                     SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/signInModal.scala.html
                     HASH: bda273ec29f40fb3d3295f0a911e0aa69b8c0b3e
                     MATRIX: 861->0

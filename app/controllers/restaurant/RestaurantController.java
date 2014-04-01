@@ -40,8 +40,14 @@ public class RestaurantController extends Controller{
 		
 		return ok("Registered");
 	}
-	
-	
-	
+	/*
+	public static Result showRestaurantProfile(Long id){
+		
+		Restaurant res=Restaurant.find.where().eq("id",id).findUnique();
+		List<RestaurantFood> foods= RestaurantFood.find.where().eq("restaurant",res).findList();
+		
+		return ok(views.html.restaurant.restaurantProfile.render(res,foods));
+		
+	}*/
 	
 }

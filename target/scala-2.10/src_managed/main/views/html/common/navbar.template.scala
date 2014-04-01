@@ -70,7 +70,7 @@ Seq[Any](format.raw/*1.17*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 04:56:19 ALMT 2014
+                    DATE: Tue Apr 01 09:50:10 ALMT 2014
                     SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/common/navbar.scala.html
                     HASH: bec172bb9d11fbf125e3d4b2bf804b18946fe7ee
                     MATRIX: 782->1|891->16|1130->220|1144->226|1204->265

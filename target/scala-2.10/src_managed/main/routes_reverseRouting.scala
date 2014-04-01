@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/User/Documents/GitHub/CSE-304-Project/conf/routes
-// @HASH:f63dc93f0e21f7de9a51e2f9a84b9c74616f2985
-// @DATE:Tue Apr 01 04:56:18 ALMT 2014
+// @HASH:7a6cb9f7dfab195572e9fe2b572f3fcc87de628b
+// @DATE:Tue Apr 01 09:53:50 ALMT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -91,16 +91,24 @@ case () if true => Call("GET", _prefix + { _defaultPrefix } + "showRestaurant")
 }
                   
 
+// @LINE:13
 // @LINE:12
 package controllers.restaurant {
 
+// @LINE:13
 // @LINE:12
 class ReverseRestaurantController {
     
 
-// @LINE:12
+// @LINE:13
 def addRestaurant(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "createRestaurant")
+}
+                                                
+
+// @LINE:12
+def createRestaurant(): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "addnewRestaurant")
 }
                                                 
     
@@ -109,14 +117,14 @@ def addRestaurant(): Call = {
 }
                   
 
-// @LINE:13
+// @LINE:14
 package controllers.area {
 
-// @LINE:13
+// @LINE:14
 class ReverseAreaController {
     
 
-// @LINE:13
+// @LINE:14
 def addArea(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "createArea")
 }
@@ -229,19 +237,32 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:13
 // @LINE:12
 package controllers.restaurant.javascript {
 
+// @LINE:13
 // @LINE:12
 class ReverseRestaurantController {
     
 
-// @LINE:12
+// @LINE:13
 def addRestaurant : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.restaurant.RestaurantController.addRestaurant",
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "createRestaurant"})
+      }
+   """
+)
+                        
+
+// @LINE:12
+def createRestaurant : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.restaurant.RestaurantController.createRestaurant",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "addnewRestaurant"})
       }
    """
 )
@@ -252,14 +273,14 @@ def addRestaurant : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
-// @LINE:13
+// @LINE:14
 package controllers.area.javascript {
 
-// @LINE:13
+// @LINE:14
 class ReverseAreaController {
     
 
-// @LINE:13
+// @LINE:14
 def addArea : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.area.AreaController.addArea",
    """
@@ -343,17 +364,25 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
         
 
+// @LINE:13
 // @LINE:12
 package controllers.restaurant.ref {
 
 
+// @LINE:13
 // @LINE:12
 class ReverseRestaurantController {
     
 
-// @LINE:12
+// @LINE:13
 def addRestaurant(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.restaurant.RestaurantController.addRestaurant(), HandlerDef(this, "controllers.restaurant.RestaurantController", "addRestaurant", Seq(), "POST", """restaurants""", _prefix + """createRestaurant""")
+   controllers.restaurant.RestaurantController.addRestaurant(), HandlerDef(this, "controllers.restaurant.RestaurantController", "addRestaurant", Seq(), "POST", """""", _prefix + """createRestaurant""")
+)
+                      
+
+// @LINE:12
+def createRestaurant(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.restaurant.RestaurantController.createRestaurant(), HandlerDef(this, "controllers.restaurant.RestaurantController", "createRestaurant", Seq(), "GET", """restaurants""", _prefix + """addnewRestaurant""")
 )
                       
     
@@ -362,15 +391,15 @@ def addRestaurant(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
         
 
-// @LINE:13
+// @LINE:14
 package controllers.area.ref {
 
 
-// @LINE:13
+// @LINE:14
 class ReverseAreaController {
     
 
-// @LINE:13
+// @LINE:14
 def addArea(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.area.AreaController.addArea(), HandlerDef(this, "controllers.area.AreaController", "addArea", Seq(), "POST", """""", _prefix + """createArea""")
 )

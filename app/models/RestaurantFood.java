@@ -45,6 +45,6 @@ public class RestaurantFood extends Model {
 	@ManyToOne(fetch=FetchType.LAZY)
 	public FoodItem foodItem;
 	
-	public static Finder<Long, Restaurant> find = 
-			new Finder<Long, Restaurant> (Long.class, Restaurant.class);
+	public static Finder<Long, RestaurantFood> find = 
+			new Finder<Long, RestaurantFood> (Long.class, RestaurantFood.class);
 }

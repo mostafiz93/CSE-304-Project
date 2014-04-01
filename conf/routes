@@ -9,9 +9,9 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 GET     /webjars/*file              controllers.WebJarAssets.at(file)
 
 #restaurants
+GET		/addnewRestaurant			controllers.restaurant.RestaurantController.createRestaurant()
 POST	/createRestaurant			controllers.restaurant.RestaurantController.addRestaurant()
 POST	/createArea					controllers.area.AreaController.addArea()
-
 
 #visitor 
 POST 	/signUp						controllers.VisitorEnd.signUp()
