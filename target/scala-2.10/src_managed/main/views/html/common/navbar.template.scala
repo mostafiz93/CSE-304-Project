@@ -30,32 +30,13 @@ Seq[Any](format.raw/*1.17*/("""
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-      	<img width="18" src=""""),_display_(Seq[Any](/*6.30*/routes/*6.36*/.Assets.at("images/apartment-icon.jpg"))),format.raw/*6.75*/(""""></img>
-      </a>
+      
     </div>
     
     <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="#">Bill</a></li>
-        <li><a href="#">Poll</a></li>
-        <li><a href="/showTasks">Maintenance</a></li>
-      </ul>
+      
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-globe"></span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rafi Kamal <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
-            <li class="divider"></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
-          </ul>
-        </li>
-      </ul>
+
     </div><!--/.nav-collapse -->
   </div>
 </div>"""))}
@@ -70,11 +51,11 @@ Seq[Any](format.raw/*1.17*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 09:50:10 ALMT 2014
+                    DATE: Tue Apr 01 12:02:38 ALMT 2014
                     SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/common/navbar.scala.html
-                    HASH: bec172bb9d11fbf125e3d4b2bf804b18946fe7ee
-                    MATRIX: 782->1|891->16|1130->220|1144->226|1204->265
-                    LINES: 26->1|29->1|34->6|34->6|34->6
+                    HASH: a2091ddb2c29b2584f9d0670a44c37e94e245ee2
+                    MATRIX: 782->1|891->16
+                    LINES: 26->1|29->1
                     -- GENERATED --
                 */
             

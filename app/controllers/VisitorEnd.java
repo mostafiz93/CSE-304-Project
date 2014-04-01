@@ -26,7 +26,7 @@ public class VisitorEnd extends Controller{
 		Visitor newVisitor = signUpFormFilled.get();
 		newVisitor.save();
 		
-		return ok("New Visitor Registered with : " +newVisitor.visitorID+" "+ newVisitor.firstname + " " + newVisitor.lastName + " " + newVisitor.password );
+		return ok("New Visitor Registered with : " +newVisitor.visitorID+" "+ newVisitor.firstName + " " + newVisitor.lastName + " " + newVisitor.password );
 	}
 	
 	public static Result signIn(){
@@ -41,7 +41,8 @@ public class VisitorEnd extends Controller{
 			if(password.equals(newVisitor.password)){
 				session().clear();
 				session("visitorID",String.valueOf(newVisitor.visitorID));
-				return redirect("http://fb.com");
+				return ok(views.html.showVisitorProfile.render(newVisitor));
+				//return redirect("/showRestaurant");
 			}
 			else 
 				throw new IllegalStateException();
@@ -54,7 +55,6 @@ public class VisitorEnd extends Controller{
 			return ok("Wrong Password: go home you are drunk");
 		}
 	}
-	
 	
 
 }

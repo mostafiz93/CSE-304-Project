@@ -16,12 +16,9 @@ import play.db.ebean.Model;
 @Entity
 public class Visitor extends Model {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = -4595847696005459822L;
-
-
+	
 	@Id
 	@MaxLength(50)
 	public String visitorID;
@@ -35,7 +32,7 @@ public class Visitor extends Model {
 	
 	@MinLength(3)
 	@MaxLength(20)
-	public String firstname;
+	public String firstName;
 
 
 	@MinLength(3)
@@ -46,7 +43,8 @@ public class Visitor extends Model {
 	@Formats.DateTime(pattern="dd/MM/yyyy")
 	public Date dateofBirth = new Date();
 
-	public boolean male;
+	public String  gender;
+	public String address;
 	
 	@MinLength(3)
 	@MaxLength(20)

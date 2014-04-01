@@ -51,10 +51,11 @@ create table restaurant_food (
 create table visitor (
   visitor_id                varchar(255) not null,
   password                  varchar(255),
-  firstname                 varchar(255),
+  first_name                varchar(255),
   last_name                 varchar(255),
   dateof_birth              timestamp,
-  male                      boolean,
+  gender                    varchar(255),
+  address                   varchar(255),
   occupation                varchar(255),
   apartment_no              varchar(255),
   street_no                 varchar(255),

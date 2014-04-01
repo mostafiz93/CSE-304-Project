@@ -70,7 +70,7 @@ Seq[Any](format.raw/*1.57*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 09:50:10 ALMT 2014
+                    DATE: Tue Apr 01 12:02:38 ALMT 2014
                     SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/restaurant/restaurantProfile.scala.html
                     HASH: 9088fa129e1d966377df10481a6bab050a9caf98
                     MATRIX: 822->1|971->56|1008->59|1021->65|1048->84|1087->86|1130->95|1148->105|1174->110|1604->505|1638->523|1677->524|1748->559|1761->563|1802->582|1870->614|1883->618|1911->624|1979->656|1992->660|2021->667|2095->710|2146->730

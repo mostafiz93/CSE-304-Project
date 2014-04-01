@@ -1,0 +1,55 @@
+@(visitor: Visitor)
+
+
+
+@common.head("Profile")
+
+@main("Profile") {
+
+<div class="col-md-12 col-md-offset-1">
+<div class="heading-banner">
+	<h3>Welcome! @visitor.firstName @visitor.lastName</h3>
+</div>
+<hr/>
+<hr/>
+<div class="col-md-3">
+	<div><strong>Gender :</strong></div>
+	<div><strong>Occupation :</strong></div>
+	<div><strong>Address:</strong></div>
+	<p></p>
+</div>
+
+<div class="col-md-4">
+	<div><strong>@visitor.gender</strong></div>
+	<div><strong>@visitor.occupation</strong></div>
+	<div><strong>@visitor.address</strong></div>
+	<p></p>
+</div>
+
+<div class="col-md-4" id="add-options">
+			<div class="row">
+				<a class="btn" href="@controllers.restaurant.routes.RestaurantController.createRestaurant()" >Add a restaurant
+  				</a>
+				<button type="button" id="sign-in" class="btn btn-default  btn-block btn-lg"
+					role="button" data-toggle="modal" data-target="#signInModal">Add Area</button>
+			</div>
+		</div>
+
+}
+
+<div class="col-md-12">
+<hr/>
+<br/>
+<br/>
+<br/>
+</div> 
+
+
+@common.footer()
+
+
+@views.html.signInModal()
+
+
+
+

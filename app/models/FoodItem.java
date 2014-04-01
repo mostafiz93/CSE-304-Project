@@ -44,6 +44,6 @@ public class FoodItem extends Model {
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="foodItem", cascade=CascadeType.ALL)
 	public List<RestaurantFood> RestaurantsFood;
 	
-	public static Finder<Long, Restaurant> find = 
-			new Finder<Long, Restaurant> (Long.class, Restaurant.class);
+	public static Finder<Long,FoodItem> find = 
+			new Finder<Long, FoodItem> (Long.class, FoodItem.class);
 }
