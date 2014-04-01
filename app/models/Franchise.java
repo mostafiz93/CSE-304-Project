@@ -14,6 +14,7 @@ import play.data.validation.Constraints.Max;
 import play.data.validation.Constraints.Min;
 import play.data.validation.Constraints.Required;
 import play.db.ebean.Model;
+import play.db.ebean.Model.Finder;
 
 @Entity
 public class Franchise extends Model {
@@ -41,9 +42,10 @@ public class Franchise extends Model {
 	@Max(100)
 	public String address;
 	
-	
-	
 	@Valid
 	@OneToMany(fetch=FetchType.LAZY, mappedBy="franchise", cascade=CascadeType.ALL)
 	public List<Restaurant> Restaurants;
+	
+	public static Finder<Long, Franchise> find = 
+			new Finder<Long, Franchise> (Long.class, Franchise.class);
 }

@@ -1,4 +1,6 @@
-@(creator:models.Visitor, restaurantForm: play.data.Form[models.Restaurant])
+@(restaurantForm: play.data.Form[models.Restaurant], franchises : Seq[models.Franchise])
+
+@import helper._
 
 <div class="modal fade" id="createRestaurant" tabindex="-1" role="dialog"
 	aria-labelledby="createRestaurantLabel" aria-hidden="true">
@@ -39,6 +41,8 @@
 							<input type="text" class="form-control" name="@name" id="@id"
 							placeholder="Phone">
 					}
+					
+					@helper.select(field = restaurantForm("franchise"), franchises.map {a => a.id.toString -> a.franchiseTitle}, '_label -> "Choose Franchise")
 					
 					
 				</div>

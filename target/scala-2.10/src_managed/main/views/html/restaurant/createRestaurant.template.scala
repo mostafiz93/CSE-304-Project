@@ -20,14 +20,16 @@ import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 import views.html._
 /**/
-object createRestaurant extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[models.Visitor,play.data.Form[models.Restaurant],play.api.templates.HtmlFormat.Appendable] {
+object createRestaurant extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,Format[play.api.templates.HtmlFormat.Appendable]](play.api.templates.HtmlFormat) with play.api.templates.Template2[play.data.Form[models.Restaurant],Seq[models.Franchise],play.api.templates.HtmlFormat.Appendable] {
 
     /**/
-    def apply/*1.2*/(creator:models.Visitor, restaurantForm: play.data.Form[models.Restaurant]):play.api.templates.HtmlFormat.Appendable = {
-        _display_ {
+    def apply/*1.2*/(restaurantForm: play.data.Form[models.Restaurant], franchises : Seq[models.Franchise]):play.api.templates.HtmlFormat.Appendable = {
+        _display_ {import helper._
 
-Seq[Any](format.raw/*1.77*/("""
 
+Seq[Any](format.raw/*1.89*/("""
+
+"""),format.raw/*4.1*/("""
 <div class="modal fade" id="createRestaurant" tabindex="-1" role="dialog"
 	aria-labelledby="createRestaurantLabel" aria-hidden="true">
 	<div class="modal-dialog">
@@ -37,62 +39,64 @@ Seq[Any](format.raw/*1.77*/("""
 					aria-hidden="true">&times;</button>
 				<h4 class="modal-title" id="createRestaurantLabel">Sign Up</h4>
 			</div>
-			"""),_display_(Seq[Any](/*12.5*/helper/*12.11*/.form(action = controllers.restaurant.routes.RestaurantController.addRestaurant())/*12.93*/ {_display_(Seq[Any](format.raw/*12.95*/("""
+			"""),_display_(Seq[Any](/*14.5*/helper/*14.11*/.form(action = controllers.restaurant.routes.RestaurantController.addRestaurant())/*14.93*/ {_display_(Seq[Any](format.raw/*14.95*/("""
 				<div class="modal-body">
 
-					"""),_display_(Seq[Any](/*15.7*/helper/*15.13*/.input(restaurantForm("name"),
+					"""),_display_(Seq[Any](/*17.7*/helper/*17.13*/.input(restaurantForm("name"),
 						 '_showConstraints -> false, 
-						 '_class -> "no-dt")/*17.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*17.56*/("""
-							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*18.55*/name)),format.raw/*18.59*/("""" id=""""),_display_(Seq[Any](/*18.66*/id)),format.raw/*18.68*/(""""
+						 '_class -> "no-dt")/*19.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*19.56*/("""
+							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*20.55*/name)),format.raw/*20.59*/("""" id=""""),_display_(Seq[Any](/*20.66*/id)),format.raw/*20.68*/(""""
 							placeholder="Name">
-					""")))})),format.raw/*20.7*/("""
+					""")))})),format.raw/*22.7*/("""
 					
-					"""),_display_(Seq[Any](/*22.7*/helper/*22.13*/.input(restaurantForm("email"),
+					"""),_display_(Seq[Any](/*24.7*/helper/*24.13*/.input(restaurantForm("email"),
 						 '_showConstraints -> false,
-						 '_class -> "no-dt")/*24.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*24.56*/("""
-							<input type="email" class="form-control" name=""""),_display_(Seq[Any](/*25.56*/name)),format.raw/*25.60*/("""" id=""""),_display_(Seq[Any](/*25.67*/id)),format.raw/*25.69*/(""""
+						 '_class -> "no-dt")/*26.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*26.56*/("""
+							<input type="email" class="form-control" name=""""),_display_(Seq[Any](/*27.56*/name)),format.raw/*27.60*/("""" id=""""),_display_(Seq[Any](/*27.67*/id)),format.raw/*27.69*/(""""
 							placeholder="Email">
-					""")))})),format.raw/*27.7*/("""
+					""")))})),format.raw/*29.7*/("""
 					
-					"""),_display_(Seq[Any](/*29.7*/helper/*29.13*/.input(restaurantForm("phone"),
+					"""),_display_(Seq[Any](/*31.7*/helper/*31.13*/.input(restaurantForm("phone"),
 						 '_showConstraints -> false,
-						 '_class -> "no-dt")/*31.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*31.56*/("""
-							<input type="tel" class="form-control" name=""""),_display_(Seq[Any](/*32.54*/name)),format.raw/*32.58*/("""" id=""""),_display_(Seq[Any](/*32.65*/id)),format.raw/*32.67*/(""""
+						 '_class -> "no-dt")/*33.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*33.56*/("""
+							<input type="tel" class="form-control" name=""""),_display_(Seq[Any](/*34.54*/name)),format.raw/*34.58*/("""" id=""""),_display_(Seq[Any](/*34.65*/id)),format.raw/*34.67*/(""""
 							placeholder="Phone">
-					""")))})),format.raw/*34.7*/("""
+					""")))})),format.raw/*36.7*/("""
 					
-					"""),_display_(Seq[Any](/*36.7*/helper/*36.13*/.input(restaurantForm("Address"),
+					"""),_display_(Seq[Any](/*38.7*/helper/*38.13*/.input(restaurantForm("Address"),
 						 '_showConstraints -> false,
-						 '_class -> "no-dt")/*38.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*38.56*/("""
-							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*39.55*/name)),format.raw/*39.59*/("""" id=""""),_display_(Seq[Any](/*39.66*/id)),format.raw/*39.68*/(""""
+						 '_class -> "no-dt")/*40.27*/ { (id, name, value, args) =>_display_(Seq[Any](format.raw/*40.56*/("""
+							<input type="text" class="form-control" name=""""),_display_(Seq[Any](/*41.55*/name)),format.raw/*41.59*/("""" id=""""),_display_(Seq[Any](/*41.66*/id)),format.raw/*41.68*/(""""
 							placeholder="Phone">
-					""")))})),format.raw/*41.7*/("""
+					""")))})),format.raw/*43.7*/("""
+					
+					"""),_display_(Seq[Any](/*45.7*/helper/*45.13*/.select(field = restaurantForm("franchise"), franchises.map {a => a.id.toString -> a.franchiseTitle}, '_label -> "Choose Franchise"))),format.raw/*45.145*/("""
 					
 					
 				</div>
 				<div class="modal-footer">
 					<button type="submit" class="btn btn-success">Sign Up</button>
 				</div>
-			""")))})),format.raw/*48.5*/("""
+			""")))})),format.raw/*52.5*/("""
 		</div>
 	</div>
 </div>"""))}
     }
     
-    def render(creator:models.Visitor,restaurantForm:play.data.Form[models.Restaurant]): play.api.templates.HtmlFormat.Appendable = apply(creator,restaurantForm)
+    def render(restaurantForm:play.data.Form[models.Restaurant],franchises:Seq[models.Franchise]): play.api.templates.HtmlFormat.Appendable = apply(restaurantForm,franchises)
     
-    def f:((models.Visitor,play.data.Form[models.Restaurant]) => play.api.templates.HtmlFormat.Appendable) = (creator,restaurantForm) => apply(creator,restaurantForm)
+    def f:((play.data.Form[models.Restaurant],Seq[models.Franchise]) => play.api.templates.HtmlFormat.Appendable) = (restaurantForm,franchises) => apply(restaurantForm,franchises)
     
     def ref: this.type = this
 
 }
                 /*
                     -- GENERATED --
-                    DATE: Mon Mar 31 21:05:07 ALMT 2014
+                    DATE: Tue Apr 01 04:57:56 ALMT 2014
                     SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/restaurant/createRestaurant.scala.html
-                    HASH: 18febc1d726c0e4f0e8365131e704124329ff5dd
-                    MATRIX: 838->1|1007->76|1451->485|1466->491|1557->573|1597->575|1669->612|1684->618|1786->711|1853->740|1944->795|1970->799|2013->806|2037->808|2103->843|2151->856|2166->862|2268->955|2335->984|2427->1040|2453->1044|2496->1051|2520->1053|2587->1089|2635->1102|2650->1108|2752->1201|2819->1230|2909->1284|2935->1288|2978->1295|3002->1297|3069->1333|3117->1346|3132->1352|3236->1447|3303->1476|3394->1531|3420->1535|3463->1542|3487->1544|3554->1580|3723->1718
-                    LINES: 26->1|29->1|40->12|40->12|40->12|40->12|43->15|43->15|45->17|45->17|46->18|46->18|46->18|46->18|48->20|50->22|50->22|52->24|52->24|53->25|53->25|53->25|53->25|55->27|57->29|57->29|59->31|59->31|60->32|60->32|60->32|60->32|62->34|64->36|64->36|66->38|66->38|67->39|67->39|67->39|67->39|69->41|76->48
+                    HASH: 0572cbf2b0baf69656a8b6086cce5aed5714a9a8
+                    MATRIX: 845->1|1042->88|1070->107|1513->515|1528->521|1619->603|1659->605|1731->642|1746->648|1848->741|1915->770|2006->825|2032->829|2075->836|2099->838|2165->873|2213->886|2228->892|2330->985|2397->1014|2489->1070|2515->1074|2558->1081|2582->1083|2649->1119|2697->1132|2712->1138|2814->1231|2881->1260|2971->1314|2997->1318|3040->1325|3064->1327|3131->1363|3179->1376|3194->1382|3298->1477|3365->1506|3456->1561|3482->1565|3525->1572|3549->1574|3616->1610|3664->1623|3679->1629|3834->1761|4003->1899
+                    LINES: 26->1|30->1|32->4|42->14|42->14|42->14|42->14|45->17|45->17|47->19|47->19|48->20|48->20|48->20|48->20|50->22|52->24|52->24|54->26|54->26|55->27|55->27|55->27|55->27|57->29|59->31|59->31|61->33|61->33|62->34|62->34|62->34|62->34|64->36|66->38|66->38|68->40|68->40|69->41|69->41|69->41|69->41|71->43|73->45|73->45|73->45|80->52
                     -- GENERATED --
                 */
             

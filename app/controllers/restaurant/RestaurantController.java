@@ -16,10 +16,10 @@ public class RestaurantController extends Controller{
 	
 	public static Result createRestaurant() {
 		
-		Visitor creator = Visitor.find.byId(Long.parseLong(session("userId")));
+		List<Franchise> franchises= Franchise.find.all();
 		
 		return ok(
-				views.html.restaurant.createRestaurant.render(creator,restaurantForm)
+				views.html.restaurant.createRestaurant.render(restaurantForm, asScalaBuffer(franchises))
 				);
 		
 	}
@@ -34,10 +34,14 @@ public class RestaurantController extends Controller{
 		
 		Restaurant restaurant = filledRestaurantForm.get();
 		
+		Visitor creator=Visitor.find.byId(Long.parseLong(session("userID")));
+		restaurant.creator=creator;
 		restaurant.save();
 		
 		return ok("Registered");
 	}
+	
+	
 	
 	
 }

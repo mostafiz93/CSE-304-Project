@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/User/Documents/GitHub/CSE-304-Project/conf/routes
-// @HASH:6d6cc4e0d8588fe7fb1f1051f2411124c38b5a2c
-// @DATE:Mon Mar 31 21:05:04 ALMT 2014
+// @HASH:f63dc93f0e21f7de9a51e2f9a84b9c74616f2985
+// @DATE:Tue Apr 01 04:56:18 ALMT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,10 +13,10 @@ import play.libs.F
 import Router.queryString
 
 
+// @LINE:20
+// @LINE:19
 // @LINE:18
 // @LINE:17
-// @LINE:16
-// @LINE:15
 // @LINE:9
 // @LINE:8
 // @LINE:5
@@ -48,38 +48,38 @@ def at(file:String): Call = {
 }
                           
 
+// @LINE:20
+// @LINE:19
 // @LINE:18
 // @LINE:17
-// @LINE:16
-// @LINE:15
 // @LINE:5
 class ReverseVisitorEnd {
     
 
-// @LINE:15
+// @LINE:17
 def signUp(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "signUp")
 }
                                                 
 
-// @LINE:16
+// @LINE:18
 def signIn(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "signIn")
 }
                                                 
 
-// @LINE:18
-// @LINE:17
+// @LINE:20
+// @LINE:19
 // @LINE:5
 def index(): Call = {
    () match {
 // @LINE:5
 case () if true => Call("GET", _prefix)
                                                         
-// @LINE:17
+// @LINE:19
 case () if true => Call("GET", _prefix + { _defaultPrefix } + "visitor")
                                                         
-// @LINE:18
+// @LINE:20
 case () if true => Call("GET", _prefix + { _defaultPrefix } + "showRestaurant")
                                                         
    }
@@ -109,11 +109,29 @@ def addRestaurant(): Call = {
 }
                   
 
+// @LINE:13
+package controllers.area {
 
+// @LINE:13
+class ReverseAreaController {
+    
+
+// @LINE:13
+def addArea(): Call = {
+   Call("POST", _prefix + { _defaultPrefix } + "createArea")
+}
+                                                
+    
+}
+                          
+}
+                  
+
+
+// @LINE:20
+// @LINE:19
 // @LINE:18
 // @LINE:17
-// @LINE:16
-// @LINE:15
 // @LINE:9
 // @LINE:8
 // @LINE:5
@@ -155,15 +173,15 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
+// @LINE:20
+// @LINE:19
 // @LINE:18
 // @LINE:17
-// @LINE:16
-// @LINE:15
 // @LINE:5
 class ReverseVisitorEnd {
     
 
-// @LINE:15
+// @LINE:17
 def signUp : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.VisitorEnd.signUp",
    """
@@ -174,7 +192,7 @@ def signUp : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:16
+// @LINE:18
 def signIn : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.VisitorEnd.signIn",
    """
@@ -185,8 +203,8 @@ def signIn : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:18
-// @LINE:17
+// @LINE:20
+// @LINE:19
 // @LINE:5
 def index : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.VisitorEnd.index",
@@ -234,11 +252,34 @@ def addRestaurant : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:13
+package controllers.area.javascript {
 
+// @LINE:13
+class ReverseAreaController {
+    
+
+// @LINE:13
+def addArea : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.area.AreaController.addArea",
+   """
+      function() {
+      return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "createArea"})
+      }
+   """
+)
+                        
+    
+}
+              
+}
+        
+
+
+// @LINE:20
+// @LINE:19
 // @LINE:18
 // @LINE:17
-// @LINE:16
-// @LINE:15
 // @LINE:9
 // @LINE:8
 // @LINE:5
@@ -271,21 +312,21 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
+// @LINE:20
+// @LINE:19
 // @LINE:18
 // @LINE:17
-// @LINE:16
-// @LINE:15
 // @LINE:5
 class ReverseVisitorEnd {
     
 
-// @LINE:15
+// @LINE:17
 def signUp(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.VisitorEnd.signUp(), HandlerDef(this, "controllers.VisitorEnd", "signUp", Seq(), "POST", """visitor """, _prefix + """signUp""")
 )
                       
 
-// @LINE:16
+// @LINE:18
 def signIn(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.VisitorEnd.signIn(), HandlerDef(this, "controllers.VisitorEnd", "signIn", Seq(), "POST", """""", _prefix + """signIn""")
 )
@@ -313,6 +354,25 @@ class ReverseRestaurantController {
 // @LINE:12
 def addRestaurant(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.restaurant.RestaurantController.addRestaurant(), HandlerDef(this, "controllers.restaurant.RestaurantController", "addRestaurant", Seq(), "POST", """restaurants""", _prefix + """createRestaurant""")
+)
+                      
+    
+}
+                          
+}
+        
+
+// @LINE:13
+package controllers.area.ref {
+
+
+// @LINE:13
+class ReverseAreaController {
+    
+
+// @LINE:13
+def addArea(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.area.AreaController.addArea(), HandlerDef(this, "controllers.area.AreaController", "addArea", Seq(), "POST", """""", _prefix + """createArea""")
 )
                       
     
