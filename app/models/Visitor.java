@@ -3,9 +3,20 @@ package models;
 import java.util.Date;
 
 
+
+
+
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 
+
+import javax.persistence.OneToMany;
+import javax.validation.Valid;
 
 import play.data.format.Formats;
 import play.data.validation.Constraints.MaxLength;
@@ -72,6 +83,11 @@ public class Visitor extends Model {
 	@MinLength(3)
 	@MaxLength(20)
 	public String postBoxNo;
+	/*
+	@Valid
+	@OneToMany(fetch=FetchType.LAZY, mappedBy="visitor", cascade=CascadeType.ALL)
+	public List<FeedBack> FeedBack;*/
+	
 	
 	public static Finder<Long, Visitor> find = 
 			new Finder<Long, Visitor> (Long.class, Visitor.class);

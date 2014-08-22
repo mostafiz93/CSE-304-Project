@@ -48,4 +48,12 @@ public class Franchise extends Model {
 	
 	public static Finder<Long, Franchise> find = 
 			new Finder<Long, Franchise> (Long.class, Franchise.class);
+	
+	public Franchise(String Name, String Email,String Phone
+			,String Address) {
+			this.franchiseTitle = Name;
+			this.email = Email;
+			this.phone =  Phone;
+			this.address = Address;
+	}
 }

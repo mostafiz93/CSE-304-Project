@@ -26,13 +26,14 @@ public class FranchiseController extends Controller{
 	
 	public static Result addNewFranhcise(){
 		
-		Form<Franchise> filledFranchiseForm = franchiseForm.bindFromRequest();
+		Map<String, String[]> params = request().body().asFormUrlEncoded();
+    	
+		String name= params.get("franchiseTitle")[0];
+		String email=params.get("email")[0];
+		String phone=params.get("phone")[0];
+		String address=params.get("address")[0];
 		
-		if(filledFranchiseForm.hasErrors()){
-			return ok(filledFranchiseForm.errors().toString());
-		}
-		
-		Franchise franchise=filledFranchiseForm.get();
+		Franchise franchise=new Franchise(name,email,phone,address);
 		
 		franchise.save();
 		

@@ -51,8 +51,8 @@ Seq[Any](format.raw/*1.17*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 12:02:38 ALMT 2014
-                    SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/common/navbar.scala.html
+                    DATE: Tue Apr 01 19:34:48 ALMT 2014
+                    SOURCE: G:/Play/Restaurant Database/app/views/common/navbar.scala.html
                     HASH: a2091ddb2c29b2584f9d0670a44c37e94e245ee2
                     MATRIX: 782->1|891->16
                     LINES: 26->1|29->1

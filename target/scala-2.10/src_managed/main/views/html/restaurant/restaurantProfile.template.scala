@@ -30,11 +30,12 @@ Seq[Any](format.raw/*1.57*/("""
 
 """),_display_(Seq[Any](/*3.2*/common/*3.8*/.main("Restaurant")/*3.27*/ {_display_(Seq[Any](format.raw/*3.29*/("""
 	
-	<h2>"""),_display_(Seq[Any](/*5.7*/restaurant/*5.17*/.name)),format.raw/*5.22*/("""</h2>
+	<h2>Restaurant Name: """),_display_(Seq[Any](/*5.24*/restaurant/*5.34*/.name)),format.raw/*5.39*/("""</h2>
+	<h2>Franchise: """),_display_(Seq[Any](/*6.18*/restaurant/*6.28*/.franchise.franchiseTitle)),format.raw/*6.53*/("""</h2>
 
 	<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading"><h3> Bill Records </h3></div>
+		  <div class="panel-heading"><h3> Food Menu </h3></div>
 		  <div class="panel-body">	   
 		 </div>
 	
@@ -43,20 +44,26 @@ Seq[Any](format.raw/*1.57*/("""
 		<tr>
 			<th> <h4> Food Item </h4> </th>
 			<th> <h4> Item Price </h4> </th>
-			<th> <h4> Date of IssuinRating </h4> </th>
+			<th> <h4> Rating </h4> </th>
 		</tr>
 								
-		"""),_display_(Seq[Any](/*21.4*/for(food <- foods) yield /*21.22*/{_display_(Seq[Any](format.raw/*21.23*/("""
+		"""),_display_(Seq[Any](/*22.4*/for(food <- foods) yield /*22.22*/{_display_(Seq[Any](format.raw/*22.23*/("""
 			<tr>		    
-		        <th> <h5>"""),_display_(Seq[Any](/*23.21*/food/*23.25*/.foodItem.itemTitle)),format.raw/*23.44*/("""</h5> </th>
-		        <th> <h5>"""),_display_(Seq[Any](/*24.21*/food/*24.25*/.price)),format.raw/*24.31*/("""</h5> </th>
-		        <th> <h5>"""),_display_(Seq[Any](/*25.21*/food/*25.25*/.rating)),format.raw/*25.32*/("""</h5> </th>
+		        <th> <h5>"""),_display_(Seq[Any](/*24.21*/food/*24.25*/.foodItem.itemTitle)),format.raw/*24.44*/("""</h5> </th>
+		        <th> <h5>"""),_display_(Seq[Any](/*25.21*/food/*25.25*/.price)),format.raw/*25.31*/("""</h5> </th>
+		        <th> <h5>"""),_display_(Seq[Any](/*26.21*/food/*26.25*/.rating)),format.raw/*26.32*/("""</h5> </th>
 		    </tr>		    		    
-		    """)))})),format.raw/*27.8*/("""
+		    """)))})),format.raw/*28.8*/("""
 		    
 	</table>
-
-""")))})),format.raw/*31.2*/("""
+	
+	<div class="col-md-4" id="add-options">
+			<div class="row">
+				<a class="btn" href=""""),_display_(Seq[Any](/*34.27*/controllers/*34.38*/.restaurant.routes.RestaurantFoodController.addFoodInMenu(restaurant.id))),format.raw/*34.110*/("""" >Add Food</a>
+			</div>
+	</div>
+	
+""")))})),format.raw/*38.2*/("""
 
 """))}
     }
@@ -70,11 +77,11 @@ Seq[Any](format.raw/*1.57*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 12:02:38 ALMT 2014
-                    SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/restaurant/restaurantProfile.scala.html
-                    HASH: 9088fa129e1d966377df10481a6bab050a9caf98
-                    MATRIX: 822->1|971->56|1008->59|1021->65|1048->84|1087->86|1130->95|1148->105|1174->110|1604->505|1638->523|1677->524|1748->559|1761->563|1802->582|1870->614|1883->618|1911->624|1979->656|1992->660|2021->667|2095->710|2146->730
-                    LINES: 26->1|29->1|31->3|31->3|31->3|31->3|33->5|33->5|33->5|49->21|49->21|49->21|51->23|51->23|51->23|52->24|52->24|52->24|53->25|53->25|53->25|55->27|59->31
+                    DATE: Tue Apr 01 21:55:05 ALMT 2014
+                    SOURCE: G:/Play/Restaurant Database/app/views/restaurant/restaurantProfile.scala.html
+                    HASH: 2bb58bf2a0907150a37cbddd13683b43d8841214
+                    MATRIX: 822->1|971->56|1008->59|1021->65|1048->84|1087->86|1148->112|1166->122|1192->127|1250->150|1268->160|1314->185|1727->563|1761->581|1800->582|1871->617|1884->621|1925->640|1993->672|2006->676|2034->682|2102->714|2115->718|2144->725|2218->768|2362->876|2382->887|2477->959|2545->996
+                    LINES: 26->1|29->1|31->3|31->3|31->3|31->3|33->5|33->5|33->5|34->6|34->6|34->6|50->22|50->22|50->22|52->24|52->24|52->24|53->25|53->25|53->25|54->26|54->26|54->26|56->28|62->34|62->34|62->34|66->38
                     -- GENERATED --
                 */
             

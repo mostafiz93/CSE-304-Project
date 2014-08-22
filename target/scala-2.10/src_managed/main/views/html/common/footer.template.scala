@@ -49,8 +49,8 @@ Seq[Any](format.raw/*1.1*/("""<div class="footer" role="contentinfo">
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 12:02:38 ALMT 2014
-                    SOURCE: C:/Users/User/Documents/GitHub/CSE-304-Project/app/views/common/footer.scala.html
+                    DATE: Tue Apr 01 19:34:48 ALMT 2014
+                    SOURCE: G:/Play/Restaurant Database/app/views/common/footer.scala.html
                     HASH: a3f984c5a07981e3aa11b443fd49b85dafd2e090
                     MATRIX: 863->0
                     LINES: 29->1

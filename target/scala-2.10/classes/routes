@@ -11,11 +11,17 @@ GET     /webjars/*file              controllers.WebJarAssets.at(file)
 #restaurants
 GET		/addnewRestaurant			controllers.restaurant.RestaurantController.createRestaurant()
 POST	/newRestaurant				controllers.restaurant.RestaurantController.addRestaurant()
-POST	/showProfile/:id			controllers.restaurant.RestaurantController.showRestaurantProfile(id: Long)
-POST	/viewRestaurants			controllers.restaurant.RestaurantController.showAllRestaurant()
-POST	/createFranchise			controllers.franchise.FranchiseController.createFranchise()
+GET	/showProfile/:id			controllers.restaurant.RestaurantController.showRestaurantProfile(id: Long)
+GET	/viewRestaurants			controllers.restaurant.RestaurantController.showAllRestaurant()
+GET	/createFranchise			controllers.franchise.FranchiseController.createFranchise()
 POST	/newFranchise				controllers.franchise.FranchiseController.addNewFranhcise()
 
+
+#food
+GET		/addInMenu/:id				controllers.restaurant.RestaurantFoodController.addFoodInMenu(id: Long)
+POST	/addedInMenu/:id			controllers.restaurant.RestaurantFoodController.addFoodInRestaurant(id: Long)
+GET		/addNewItem					controllers.foods.FoodController.addNewFood()
+POST	/addedFood					controllers.foods.FoodController.saveFood()
 
 #visitor 
 POST 	/signUp						controllers.VisitorEnd.signUp()

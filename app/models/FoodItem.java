@@ -46,4 +46,9 @@ public class FoodItem extends Model {
 	
 	public static Finder<Long,FoodItem> find = 
 			new Finder<Long, FoodItem> (Long.class, FoodItem.class);
+	
+	public FoodItem(String Title,String category){
+		this.category=category;
+		this.itemTitle=Title;
+	}
 }

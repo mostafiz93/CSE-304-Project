@@ -29,7 +29,7 @@ public class RestaurantFood extends Model {
 	public int price;
 	
 	@Required
-	public double rating;
+	public Double rating;
 	
 	@Required
 	@Min(5)
@@ -47,4 +47,11 @@ public class RestaurantFood extends Model {
 	
 	public static Finder<Long, RestaurantFood> find = 
 			new Finder<Long, RestaurantFood> (Long.class, RestaurantFood.class);
+	
+	public RestaurantFood(int Price, String Details, FoodItem fd, Restaurant res){
+		price=Price;
+		details=Details;
+		foodItem=fd;
+		restaurant=res;
+	}
 }

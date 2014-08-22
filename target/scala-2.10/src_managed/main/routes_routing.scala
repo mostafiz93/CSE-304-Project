@@ -1,6 +1,6 @@
-// @SOURCE:C:/Users/User/Documents/GitHub/CSE-304-Project/conf/routes
-// @HASH:bc7eec3f9c70aba8092e917df00f732a79397f35
-// @DATE:Tue Apr 01 12:02:36 ALMT 2014
+// @SOURCE:G:/Play/Restaurant Database/conf/routes
+// @HASH:e90b0ed418549f15f02cc988f9bc340570432a05
+// @DATE:Tue Apr 01 23:08:05 ALMT 2014
 
 
 import play.core._
@@ -49,15 +49,15 @@ private[this] lazy val controllers_restaurant_RestaurantController_addRestaurant
         
 
 // @LINE:14
-private[this] lazy val controllers_restaurant_RestaurantController_showRestaurantProfile5 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("showProfile/"),DynamicPart("id", """[^/]+""",true))))
+private[this] lazy val controllers_restaurant_RestaurantController_showRestaurantProfile5 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("showProfile/"),DynamicPart("id", """[^/]+""",true))))
         
 
 // @LINE:15
-private[this] lazy val controllers_restaurant_RestaurantController_showAllRestaurant6 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("viewRestaurants"))))
+private[this] lazy val controllers_restaurant_RestaurantController_showAllRestaurant6 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("viewRestaurants"))))
         
 
 // @LINE:16
-private[this] lazy val controllers_franchise_FranchiseController_createFranchise7 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("createFranchise"))))
+private[this] lazy val controllers_franchise_FranchiseController_createFranchise7 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("createFranchise"))))
         
 
 // @LINE:17
@@ -65,21 +65,37 @@ private[this] lazy val controllers_franchise_FranchiseController_addNewFranhcise
         
 
 // @LINE:21
-private[this] lazy val controllers_VisitorEnd_signUp9 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("signUp"))))
+private[this] lazy val controllers_restaurant_RestaurantFoodController_addFoodInMenu9 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("addInMenu/"),DynamicPart("id", """[^/]+""",true))))
         
 
 // @LINE:22
-private[this] lazy val controllers_VisitorEnd_signIn10 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("signIn"))))
+private[this] lazy val controllers_restaurant_RestaurantFoodController_addFoodInRestaurant10 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("addedInMenu/"),DynamicPart("id", """[^/]+""",true))))
         
 
 // @LINE:23
-private[this] lazy val controllers_VisitorEnd_index11 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("visitor"))))
+private[this] lazy val controllers_foods_FoodController_addNewFood11 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("addNewItem"))))
         
 
 // @LINE:24
-private[this] lazy val controllers_VisitorEnd_index12 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("showRestaurant"))))
+private[this] lazy val controllers_foods_FoodController_saveFood12 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("addedFood"))))
         
-def documentation = List(("""GET""", prefix,"""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """webjars/$file<.+>""","""controllers.WebJarAssets.at(file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addnewRestaurant""","""controllers.restaurant.RestaurantController.createRestaurant()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newRestaurant""","""controllers.restaurant.RestaurantController.addRestaurant()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showProfile/$id<[^/]+>""","""controllers.restaurant.RestaurantController.showRestaurantProfile(id:Long)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """viewRestaurants""","""controllers.restaurant.RestaurantController.showAllRestaurant()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createFranchise""","""controllers.franchise.FranchiseController.createFranchise()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newFranchise""","""controllers.franchise.FranchiseController.addNewFranhcise()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signUp""","""controllers.VisitorEnd.signUp()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signIn""","""controllers.VisitorEnd.signIn()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """visitor""","""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showRestaurant""","""controllers.VisitorEnd.index()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:27
+private[this] lazy val controllers_VisitorEnd_signUp13 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("signUp"))))
+        
+
+// @LINE:28
+private[this] lazy val controllers_VisitorEnd_signIn14 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("signIn"))))
+        
+
+// @LINE:29
+private[this] lazy val controllers_VisitorEnd_index15 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("visitor"))))
+        
+
+// @LINE:30
+private[this] lazy val controllers_VisitorEnd_index16 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("showRestaurant"))))
+        
+def documentation = List(("""GET""", prefix,"""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """webjars/$file<.+>""","""controllers.WebJarAssets.at(file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addnewRestaurant""","""controllers.restaurant.RestaurantController.createRestaurant()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newRestaurant""","""controllers.restaurant.RestaurantController.addRestaurant()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showProfile/$id<[^/]+>""","""controllers.restaurant.RestaurantController.showRestaurantProfile(id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """viewRestaurants""","""controllers.restaurant.RestaurantController.showAllRestaurant()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createFranchise""","""controllers.franchise.FranchiseController.createFranchise()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newFranchise""","""controllers.franchise.FranchiseController.addNewFranhcise()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addInMenu/$id<[^/]+>""","""controllers.restaurant.RestaurantFoodController.addFoodInMenu(id:Long)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addedInMenu/$id<[^/]+>""","""controllers.restaurant.RestaurantFoodController.addFoodInRestaurant(id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addNewItem""","""controllers.foods.FoodController.addNewFood()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addedFood""","""controllers.foods.FoodController.saveFood()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signUp""","""controllers.VisitorEnd.signUp()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signIn""","""controllers.VisitorEnd.signIn()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """visitor""","""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showRestaurant""","""controllers.VisitorEnd.index()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]] 
 }}
@@ -130,7 +146,7 @@ case controllers_restaurant_RestaurantController_addRestaurant4(params) => {
 // @LINE:14
 case controllers_restaurant_RestaurantController_showRestaurantProfile5(params) => {
    call(params.fromPath[Long]("id", None)) { (id) =>
-        invokeHandler(controllers.restaurant.RestaurantController.showRestaurantProfile(id), HandlerDef(this, "controllers.restaurant.RestaurantController", "showRestaurantProfile", Seq(classOf[Long]),"POST", """""", Routes.prefix + """showProfile/$id<[^/]+>"""))
+        invokeHandler(controllers.restaurant.RestaurantController.showRestaurantProfile(id), HandlerDef(this, "controllers.restaurant.RestaurantController", "showRestaurantProfile", Seq(classOf[Long]),"GET", """""", Routes.prefix + """showProfile/$id<[^/]+>"""))
    }
 }
         
@@ -138,7 +154,7 @@ case controllers_restaurant_RestaurantController_showRestaurantProfile5(params) 
 // @LINE:15
 case controllers_restaurant_RestaurantController_showAllRestaurant6(params) => {
    call { 
-        invokeHandler(controllers.restaurant.RestaurantController.showAllRestaurant(), HandlerDef(this, "controllers.restaurant.RestaurantController", "showAllRestaurant", Nil,"POST", """""", Routes.prefix + """viewRestaurants"""))
+        invokeHandler(controllers.restaurant.RestaurantController.showAllRestaurant(), HandlerDef(this, "controllers.restaurant.RestaurantController", "showAllRestaurant", Nil,"GET", """""", Routes.prefix + """viewRestaurants"""))
    }
 }
         
@@ -146,7 +162,7 @@ case controllers_restaurant_RestaurantController_showAllRestaurant6(params) => {
 // @LINE:16
 case controllers_franchise_FranchiseController_createFranchise7(params) => {
    call { 
-        invokeHandler(controllers.franchise.FranchiseController.createFranchise(), HandlerDef(this, "controllers.franchise.FranchiseController", "createFranchise", Nil,"POST", """""", Routes.prefix + """createFranchise"""))
+        invokeHandler(controllers.franchise.FranchiseController.createFranchise(), HandlerDef(this, "controllers.franchise.FranchiseController", "createFranchise", Nil,"GET", """""", Routes.prefix + """createFranchise"""))
    }
 }
         
@@ -160,31 +176,63 @@ case controllers_franchise_FranchiseController_addNewFranhcise8(params) => {
         
 
 // @LINE:21
-case controllers_VisitorEnd_signUp9(params) => {
+case controllers_restaurant_RestaurantFoodController_addFoodInMenu9(params) => {
+   call(params.fromPath[Long]("id", None)) { (id) =>
+        invokeHandler(controllers.restaurant.RestaurantFoodController.addFoodInMenu(id), HandlerDef(this, "controllers.restaurant.RestaurantFoodController", "addFoodInMenu", Seq(classOf[Long]),"GET", """food""", Routes.prefix + """addInMenu/$id<[^/]+>"""))
+   }
+}
+        
+
+// @LINE:22
+case controllers_restaurant_RestaurantFoodController_addFoodInRestaurant10(params) => {
+   call(params.fromPath[Long]("id", None)) { (id) =>
+        invokeHandler(controllers.restaurant.RestaurantFoodController.addFoodInRestaurant(id), HandlerDef(this, "controllers.restaurant.RestaurantFoodController", "addFoodInRestaurant", Seq(classOf[Long]),"POST", """""", Routes.prefix + """addedInMenu/$id<[^/]+>"""))
+   }
+}
+        
+
+// @LINE:23
+case controllers_foods_FoodController_addNewFood11(params) => {
+   call { 
+        invokeHandler(controllers.foods.FoodController.addNewFood(), HandlerDef(this, "controllers.foods.FoodController", "addNewFood", Nil,"GET", """""", Routes.prefix + """addNewItem"""))
+   }
+}
+        
+
+// @LINE:24
+case controllers_foods_FoodController_saveFood12(params) => {
+   call { 
+        invokeHandler(controllers.foods.FoodController.saveFood(), HandlerDef(this, "controllers.foods.FoodController", "saveFood", Nil,"POST", """""", Routes.prefix + """addedFood"""))
+   }
+}
+        
+
+// @LINE:27
+case controllers_VisitorEnd_signUp13(params) => {
    call { 
         invokeHandler(controllers.VisitorEnd.signUp(), HandlerDef(this, "controllers.VisitorEnd", "signUp", Nil,"POST", """visitor """, Routes.prefix + """signUp"""))
    }
 }
         
 
-// @LINE:22
-case controllers_VisitorEnd_signIn10(params) => {
+// @LINE:28
+case controllers_VisitorEnd_signIn14(params) => {
    call { 
         invokeHandler(controllers.VisitorEnd.signIn(), HandlerDef(this, "controllers.VisitorEnd", "signIn", Nil,"POST", """""", Routes.prefix + """signIn"""))
    }
 }
         
 
-// @LINE:23
-case controllers_VisitorEnd_index11(params) => {
+// @LINE:29
+case controllers_VisitorEnd_index15(params) => {
    call { 
         invokeHandler(controllers.VisitorEnd.index(), HandlerDef(this, "controllers.VisitorEnd", "index", Nil,"GET", """""", Routes.prefix + """visitor"""))
    }
 }
         
 
-// @LINE:24
-case controllers_VisitorEnd_index12(params) => {
+// @LINE:30
+case controllers_VisitorEnd_index16(params) => {
    call { 
         invokeHandler(controllers.VisitorEnd.index(), HandlerDef(this, "controllers.VisitorEnd", "index", Nil,"GET", """""", Routes.prefix + """showRestaurant"""))
    }

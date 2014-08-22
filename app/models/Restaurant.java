@@ -67,4 +67,13 @@ public class Restaurant extends Model {
 	
 	public static Finder<Long, Restaurant> find = 
 			new Finder<Long, Restaurant> (Long.class, Restaurant.class);
+
+	public Restaurant(String Name, String Email,String Phone
+			,String Address, Franchise Fr) {
+			this.name = Name;
+			this.email = Email;
+			this.phone =  Phone;
+			this.address = Address;
+			this.franchise = Fr;
+	}
 }

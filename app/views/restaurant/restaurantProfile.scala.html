@@ -2,11 +2,12 @@
 
 @common.main("Restaurant") {
 	
-	<h2>@restaurant.name</h2>
+	<h2>Restaurant Name: @restaurant.name</h2>
+	<h2>Franchise: @restaurant.franchise.franchiseTitle</h2>
 
 	<div class="panel panel-default">
 		  <!-- Default panel contents -->
-		  <div class="panel-heading"><h3> Bill Records </h3></div>
+		  <div class="panel-heading"><h3> Food Menu </h3></div>
 		  <div class="panel-body">	   
 		 </div>
 	
@@ -15,7 +16,7 @@
 		<tr>
 			<th> <h4> Food Item </h4> </th>
 			<th> <h4> Item Price </h4> </th>
-			<th> <h4> Date of IssuinRating </h4> </th>
+			<th> <h4> Rating </h4> </th>
 		</tr>
 								
 		@for(food <- foods){
@@ -27,6 +28,12 @@
 		    }
 		    
 	</table>
-
+	
+	<div class="col-md-4" id="add-options">
+			<div class="row">
+				<a class="btn" href="@controllers.restaurant.routes.RestaurantFoodController.addFoodInMenu(restaurant.id)" >Add Food</a>
+			</div>
+	</div>
+	
 }
 

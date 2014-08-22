@@ -6,5 +6,6 @@
 [debug] 	URLRepository(activator-local,Patterns(ivyPatterns=List(file:/C:/activator-1.0.13/repository/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), artifactPatterns=List(file:/C:/activator-1.0.13/repository/[organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]), isMavenCompatible=false))
 [debug] 	public: http://repo1.maven.org/maven2/
 [debug] 	Typesafe Releases: http://repo.typesafe.com/typesafe/releases
+[debug] 	Typesafe Releases: http://repo.typesafe.com/typesafe/releases
 [debug] 	Typesafe Releases Repository: http://repo.typesafe.com/typesafe/releases/
 [debug] Using inline dependencies specified in Scala.

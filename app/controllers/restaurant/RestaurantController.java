@@ -26,21 +26,27 @@ public class RestaurantController extends Controller{
 	
 	public static Result addRestaurant(){
 		
-		Form<Restaurant> filledRestaurantForm = restaurantForm.bindFromRequest();
+		Map<String, String[]> params = request().body().asFormUrlEncoded();
+    	
+		String name= params.get("name")[0];
+		String email=params.get("email")[0];
+		String phone=params.get("phone")[0];
+		String address=params.get("address")[0];
+		String frid=params.get("franchise")[0];
 		
-		if(filledRestaurantForm.hasErrors()){
-			return ok(filledRestaurantForm.errors().toString());
-		}
+		Long fr=Long.parseLong(frid);
 		
-		Restaurant restaurant = filledRestaurantForm.get();
+		Franchise frnchs=Franchise.find.byId(fr);
 		
-		Visitor creator=Visitor.find.byId(Long.parseLong(session("userID")));
-		restaurant.creator=creator;
+		Restaurant restaurant = new Restaurant(name,email,phone,address,frnchs);
+		/*
+		Visitor creator=Visitor.find.byId(Long.parseLong(session("visitorID")));
+		restaurant.creator=creator;*/
 		restaurant.save();
 		
 		return ok("Registered");
 	}
-	/*
+	
 	public static Result showRestaurantProfile(Long id){
 		
 		Restaurant res=Restaurant.find.where().eq("id",id).findUnique();
@@ -48,6 +54,14 @@ public class RestaurantController extends Controller{
 		
 		return ok(views.html.restaurant.restaurantProfile.render(res,foods));
 		
-	}*/
+	}
+	
+	public static Result showAllRestaurant(){
+		
+		List< Restaurant > res= Restaurant.find.all();
+		
+		return ok(views.html.restaurant.showAllRestaurant.render(res));
+	}
+	
 	
 }

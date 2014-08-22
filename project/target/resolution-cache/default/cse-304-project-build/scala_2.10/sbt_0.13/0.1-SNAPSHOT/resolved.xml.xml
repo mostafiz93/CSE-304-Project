@@ -4,7 +4,7 @@
 		module="cse-304-project-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20140329065915"
+		publication="20140401134456"
 		e:scalaVersion="2.10" e:sbtVersion="0.13"
 	>
 		<description>
