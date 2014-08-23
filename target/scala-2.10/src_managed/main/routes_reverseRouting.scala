@@ -1,6 +1,6 @@
 // @SOURCE:G:/Play/Restaurant Database/conf/routes
-// @HASH:5fbe795621abd0fa7ffe1a07573e16c22636e856
-// @DATE:Sat Aug 23 10:54:11 ALMT 2014
+// @HASH:e438f254e052644c385fc965e6566045c8b50d80
+// @DATE:Sat Aug 23 12:44:14 ALMT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -155,6 +155,7 @@ case () if true => Call("GET", _prefix + { _defaultPrefix } + "showRestaurant")
 }
                   
 
+// @LINE:36
 // @LINE:35
 // @LINE:34
 package controllers.isdrun {
@@ -166,6 +167,19 @@ class ReverseUser {
 // @LINE:35
 def index(user:String): Call = {
    Call("GET", _prefix + { _defaultPrefix } + "User/" + implicitly[PathBindable[String]].unbind("user", dynamicString(user)))
+}
+                                                
+    
+}
+                          
+
+// @LINE:36
+class ReverseRestaurant {
+    
+
+// @LINE:36
+def index(restaurant:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "Restaurant/" + implicitly[PathBindable[String]].unbind("restaurant", dynamicString(restaurant)))
 }
                                                 
     
@@ -435,6 +449,7 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:36
 // @LINE:35
 // @LINE:34
 package controllers.isdrun.javascript {
@@ -449,6 +464,24 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
    """
       function(user) {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "User/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("user", encodeURIComponent(user))})
+      }
+   """
+)
+                        
+    
+}
+              
+
+// @LINE:36
+class ReverseRestaurant {
+    
+
+// @LINE:36
+def index : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.isdrun.Restaurant.index",
+   """
+      function(restaurant) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "Restaurant/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("restaurant", encodeURIComponent(restaurant))})
       }
    """
 )
@@ -682,6 +715,7 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
         
 
+// @LINE:36
 // @LINE:35
 // @LINE:34
 package controllers.isdrun.ref {
@@ -694,6 +728,19 @@ class ReverseUser {
 // @LINE:35
 def index(user:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.isdrun.User.index(user), HandlerDef(this, "controllers.isdrun.User", "index", Seq(classOf[String]), "GET", """""", _prefix + """User/$user<[^/]+>""")
+)
+                      
+    
+}
+                          
+
+// @LINE:36
+class ReverseRestaurant {
+    
+
+// @LINE:36
+def index(restaurant:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.isdrun.Restaurant.index(restaurant), HandlerDef(this, "controllers.isdrun.Restaurant", "index", Seq(classOf[String]), "GET", """""", _prefix + """Restaurant/$restaurant<[^/]+>""")
 )
                       
     

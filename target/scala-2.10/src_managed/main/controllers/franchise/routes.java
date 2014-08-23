@@ -1,6 +1,6 @@
 // @SOURCE:G:/Play/Restaurant Database/conf/routes
-// @HASH:5fbe795621abd0fa7ffe1a07573e16c22636e856
-// @DATE:Sat Aug 23 10:54:11 ALMT 2014
+// @HASH:e438f254e052644c385fc965e6566045c8b50d80
+// @DATE:Sat Aug 23 12:44:14 ALMT 2014
 
 package controllers.franchise;
 

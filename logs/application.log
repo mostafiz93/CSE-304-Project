@@ -1,53 +1,16 @@
-2014-08-23 10:57:58,245 - [INFO] - from play in pool-63-thread-3 
+2014-08-23 12:45:20,115 - [INFO] - from play in pool-50-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-08-23 10:58:09,778 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-23 12:45:27,457 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2014-08-23 10:58:09,973 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-23 12:45:27,612 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2014-08-23 10:58:11,982 - [ERROR] - from application in New I/O worker #1 
+2014-08-23 12:45:28,511 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6ja9f9c1d - Internal server error, for (GET) [/] ->
-
-play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
-	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:507) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:461) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:459) ~[na:na]
-	at scala.collection.immutable.List.foreach(List.scala:318) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:459) ~[na:na]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[na:na]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[na:na]
-	at scala.collection.immutable.List.foreach(List.scala:318) ~[na:na]
-	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[na:na]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[na:na]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[na:na]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[na:na]
-	at play.api.Play$.start(Play.scala:87) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[na:na]
-	at scala.util.Success.flatMap(Try.scala:200) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[na:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
-	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
-
-2014-08-23 10:58:12,335 - [ERROR] - from application in New I/O worker #2 
-
-
-! @6ja9f9c1d - Internal server error, for (GET) [/] ->
+! @6jaa3bhfo - Internal server error, for (GET) [/User/Anika] ->
 
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[na:na]
@@ -81,49 +44,66 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
 
-2014-08-23 10:58:14,485 - [ERROR] - from application in New I/O worker #3 
-
-
-! @6ja9f9c1d - Internal server error, for (GET) [/] ->
-
-play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
-	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:507) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:461) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:459) ~[na:na]
-	at scala.collection.immutable.List.foreach(List.scala:318) ~[na:na]
-	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:459) ~[na:na]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[na:na]
-	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[na:na]
-	at scala.collection.immutable.List.foreach(List.scala:318) ~[na:na]
-	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[na:na]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[na:na]
-	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[na:na]
-	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[na:na]
-	at play.api.Play$.start(Play.scala:87) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[na:na]
-	at scala.Option.map(Option.scala:145) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[na:na]
-	at scala.util.Success.flatMap(Try.scala:200) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[na:na]
-	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[na:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
-	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
-	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
-	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
-
-2014-08-23 10:58:18,025 - [INFO] - from play in play-internal-execution-context-2 
+2014-08-23 12:45:33,259 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2014-08-23 10:58:18,028 - [INFO] - from play in play-internal-execution-context-2 
+2014-08-23 12:45:33,263 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2014-08-23 10:58:18,217 - [INFO] - from play in play-internal-execution-context-2 
+2014-08-23 12:45:33,441 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-23 13:02:06,136 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-08-23 13:02:06,139 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-08-23 13:02:06,303 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-23 13:04:41,158 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-08-23 13:04:41,161 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-08-23 13:04:41,319 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-23 13:05:48,575 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-08-23 13:05:48,577 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-08-23 13:05:48,736 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-23 13:06:16,721 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-08-23 13:06:16,723 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-08-23 13:06:16,868 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-23 13:06:33,544 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-08-23 13:06:33,578 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-08-23 13:06:33,726 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2014-08-23 13:07:04,929 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2014-08-23 13:07:04,931 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2014-08-23 13:07:05,071 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
