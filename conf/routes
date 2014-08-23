@@ -28,3 +28,7 @@ POST 	/signUp						controllers.VisitorEnd.signUp()
 POST 	/signIn						controllers.VisitorEnd.signIn()
 GET		/visitor					controllers.VisitorEnd.index()
 GET		/showRestaurant				controllers.VisitorEnd.index()
+
+#isdrun
+
+GET     /home                       controllers.isdrun.home.index()

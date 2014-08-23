@@ -1,16 +1,16 @@
-2014-08-23 01:04:33,167 - [INFO] - from play in pool-31-thread-5 
+2014-08-23 09:09:10,289 - [INFO] - from play in pool-31-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2014-08-23 01:04:37,694 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-23 09:09:20,509 - [INFO] - from play in play-internal-execution-context-1 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2014-08-23 01:04:37,937 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-23 09:09:20,659 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:h2:mem:play
 
-2014-08-23 01:04:39,062 - [ERROR] - from application in New I/O worker #1 
+2014-08-23 09:09:23,063 - [ERROR] - from application in New I/O worker #1 
 
 
-! @6ja6fb66d - Internal server error, for (GET) [/] ->
+! @6ja911poj - Internal server error, for (GET) [/] ->
 
 play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
 	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[na:na]
@@ -44,12 +44,230 @@ play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evoluti
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
 
-2014-08-23 01:04:43,590 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-23 09:09:23,481 - [ERROR] - from application in New I/O worker #2 
+
+
+! @6ja911poj - Internal server error, for (GET) [/] ->
+
+play.api.db.evolutions.InvalidDatabaseRevision: Database 'default' needs evolution![An SQL script need to be run on your database.]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1$$anonfun$apply$1.apply$mcV$sp(Evolutions.scala:486) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin.withLock(Evolutions.scala:507) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:461) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin$$anonfun$onStart$1.apply(Evolutions.scala:459) ~[na:na]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[na:na]
+	at play.api.db.evolutions.EvolutionsPlugin.onStart(Evolutions.scala:459) ~[na:na]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[na:na]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[na:na]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[na:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[na:na]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[na:na]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[na:na]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[na:na]
+	at play.api.Play$.start(Play.scala:87) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[na:na]
+	at scala.util.Success.flatMap(Try.scala:200) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+
+2014-08-23 09:09:27,805 - [INFO] - from play in play-internal-execution-context-2 
 datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
 
-2014-08-23 01:04:43,593 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-23 09:09:27,808 - [INFO] - from play in play-internal-execution-context-2 
 database [default] connected at jdbc:h2:mem:play
 
-2014-08-23 01:04:43,759 - [INFO] - from play in play-internal-execution-context-1 
+2014-08-23 09:09:28,019 - [INFO] - from play in play-internal-execution-context-2 
 Application started (Dev)
+
+2014-08-23 09:10:09,796 - [ERROR] - from application in New I/O worker #4 
+
+
+! Internal server error, for (GET) [/home] ->
+
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: PermGen space
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:252) ~[na:1.7.0_03]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:111) ~[na:1.7.0_03]
+	at sbt.ConcurrentRestrictions$$anon$4.take(ConcurrentRestrictions.scala:196) ~[na:na]
+	at sbt.Execute.next$1(Execute.scala:88) ~[na:na]
+	at sbt.Execute.processAll(Execute.scala:91) ~[na:na]
+	at sbt.Execute.runKeep(Execute.scala:69) ~[na:na]
+	at sbt.EvaluateTask$.liftedTree1$1(EvaluateTask.scala:183) ~[na:na]
+	at sbt.EvaluateTask$.sbt$EvaluateTask$$run$1(EvaluateTask.scala:183) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$runTask$2.apply(EvaluateTask.scala:196) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$runTask$2.apply(EvaluateTask.scala:196) ~[na:na]
+	at sbt.Signals0.withHandler(Signal.scala:55) ~[na:na]
+	at sbt.Signals$.withHandler(Signal.scala:13) ~[na:na]
+	at sbt.EvaluateTask$.runTask(EvaluateTask.scala:196) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1$$anonfun$apply$3.apply(EvaluateTask.scala:117) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1$$anonfun$apply$3.apply(EvaluateTask.scala:116) ~[na:na]
+	at scala.Option$WithFilter.map(Option.scala:206) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1.apply(EvaluateTask.scala:116) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1.apply(EvaluateTask.scala:115) ~[na:na]
+	at sbt.EvaluateTask$.withStreams(EvaluateTask.scala:153) ~[na:na]
+	at sbt.EvaluateTask$.apply(EvaluateTask.scala:115) ~[na:na]
+	at sbt.Project$.runTask(Project.scala:445) ~[na:na]
+	at sbt.Project$.runTask(Project.scala:441) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[na:1.7.0_03]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:791) ~[na:1.7.0_03]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[na:1.7.0_03]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449) ~[na:1.7.0_03]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71) ~[na:1.7.0_03]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[na:1.7.0_03]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355) ~[na:1.7.0_03]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.7.0_03]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354) ~[na:1.7.0_03]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423) ~[na:1.7.0_03]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356) ~[na:1.7.0_03]
+	at scala.tools.nsc.backend.icode.analysis.CopyPropagation$copyLattice$.<init>(CopyPropagation.scala:151) ~[na:na]
+	at scala.tools.nsc.backend.icode.analysis.CopyPropagation.copyLattice$lzycompute(CopyPropagation.scala:51) ~[na:na]
+	at scala.tools.nsc.backend.icode.analysis.CopyPropagation.copyLattice(CopyPropagation.scala:51) ~[na:na]
+	at scala.tools.nsc.backend.icode.analysis.CopyPropagation$CopyAnalysis.<init>(CopyPropagation.scala:189) ~[na:na]
+	at scala.tools.nsc.backend.opt.ClosureElimination$ClosureElim.<init>(ClosureElimination.scala:93) ~[na:na]
+	at scala.tools.nsc.backend.opt.ClosureElimination$ClosureEliminationPhase.<init>(ClosureElimination.scala:73) ~[na:na]
+	at scala.tools.nsc.backend.opt.ClosureElimination.newPhase(ClosureElimination.scala:23) ~[na:na]
+	at scala.tools.nsc.backend.opt.ClosureElimination.newPhase(ClosureElimination.scala:15) ~[na:na]
+	at scala.tools.nsc.Global$Run$$anonfun$27.apply(Global.scala:1310) ~[na:na]
+	at scala.tools.nsc.Global$Run$$anonfun$27.apply(Global.scala:1310) ~[na:na]
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:111) ~[na:na]
+	at scala.collection.immutable.List.foldLeft(List.scala:84) ~[na:na]
+	at scala.tools.nsc.Global$Run.<init>(Global.scala:1310) ~[na:na]
+	at xsbt.CachedCompiler0$$anon$2.<init>(CompilerInterface.scala:113) ~[na:na]
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:113) ~[na:na]
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:99) ~[na:na]
+	at xsbt.CompilerInterface.run(CompilerInterface.scala:27) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_03]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_03]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_03]
+	at java.lang.reflect.Method.invoke(Method.java:601) ~[na:1.7.0_03]
+
+2014-08-23 09:10:12,400 - [ERROR] - from play.nettyException in New I/O worker #4 
+Exception caught in Netty
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.Throwable.printStackTrace(Throwable.java:642) ~[na:1.7.0_03]
+	at java.lang.Throwable.printStackTrace(Throwable.java:633) ~[na:1.7.0_03]
+	at org.aspectj.weaver.tools.DefaultTrace.error(DefaultTrace.java:91) ~[na:na]
+	at org.aspectj.weaver.loadtime.WeavingURLClassLoader.defineClass(WeavingURLClassLoader.java:150) ~[na:na]
+	at org.aspectj.weaver.bcel.ExtensibleURLClassLoader.defineClass(ExtensibleURLClassLoader.java:97) ~[na:na]
+	at org.aspectj.weaver.bcel.ExtensibleURLClassLoader.findClass(ExtensibleURLClassLoader.java:52) ~[na:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423) ~[na:1.7.0_03]
+	at com.typesafe.sbt.echo.EchoPlayRun$$anonfun$createWeavingClassLoader$1$$anon$1.loadClass(EchoPlayRun.scala:50) ~[na:na]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356) ~[na:1.7.0_03]
+	at com.typesafe.trace.ActionTrace.error(ActionTrace.scala:91) ~[na:na]
+	at com.typesafe.trace.ActionTraceAspect.ajc$before$com_typesafe_trace_ActionTraceAspect$5$65e59d8f(ActionTraceAspect.aj:109) ~[na:na]
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:189) ~[na:na]
+	at play.core.server.Server$class.logExceptionAndGetResult$1(Server.scala:73) ~[na:na]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:83) ~[na:na]
+	at play.core.server.Server$$anonfun$getHandlerFor$4.apply(Server.scala:81) ~[na:na]
+	at scala.util.Either$RightProjection.flatMap(Either.scala:523) ~[na:na]
+	at play.core.server.Server$class.getHandlerFor(Server.scala:81) ~[na:na]
+	at play.core.server.NettyServer.getHandlerFor(NettyServer.scala:35) ~[na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$9.apply(PlayDefaultUpstreamHandler.scala:118) ~[na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$9.apply(PlayDefaultUpstreamHandler.scala:118) ~[na:na]
+	at scala.util.Either.fold(Either.scala:98) ~[na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived_aroundBody2(PlayDefaultUpstreamHandler.scala:112) ~[na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$AjcClosure3.run(PlayDefaultUpstreamHandler.scala:1) ~[na:na]
+	at com.typesafe.trace.NettyTraceAspect.ajc$around$com_typesafe_trace_NettyTraceAspect$4$af7df278proceed(NettyTraceAspect.aj:188) ~[na:na]
+	at com.typesafe.trace.NettyTraceAspect.ajc$around$com_typesafe_trace_NettyTraceAspect$4$af7df278(NettyTraceAspect.aj:193) ~[na:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler.messageReceived(PlayDefaultUpstreamHandler.scala:65) ~[na:na]
+	at com.typesafe.netty.http.pipelining.HttpPipeliningHandler.messageReceived(HttpPipeliningHandler.java:62) ~[na:na]
+
+2014-08-23 09:10:17,108 - [ERROR] - from application in New I/O worker #2 
+
+
+! Internal server error, for (GET) [/home] ->
+
+java.util.concurrent.ExecutionException: java.lang.OutOfMemoryError: PermGen space
+	at java.util.concurrent.FutureTask$Sync.innerGet(FutureTask.java:252) ~[na:1.7.0_03]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:111) ~[na:1.7.0_03]
+	at sbt.ConcurrentRestrictions$$anon$4.take(ConcurrentRestrictions.scala:196) ~[na:na]
+	at sbt.Execute.next$1(Execute.scala:88) ~[na:na]
+	at sbt.Execute.processAll(Execute.scala:91) ~[na:na]
+	at sbt.Execute.runKeep(Execute.scala:69) ~[na:na]
+	at sbt.EvaluateTask$.liftedTree1$1(EvaluateTask.scala:183) ~[na:na]
+	at sbt.EvaluateTask$.sbt$EvaluateTask$$run$1(EvaluateTask.scala:183) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$runTask$2.apply(EvaluateTask.scala:196) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$runTask$2.apply(EvaluateTask.scala:196) ~[na:na]
+	at sbt.Signals0.withHandler(Signal.scala:55) ~[na:na]
+	at sbt.Signals$.withHandler(Signal.scala:13) ~[na:na]
+	at sbt.EvaluateTask$.runTask(EvaluateTask.scala:196) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1$$anonfun$apply$3.apply(EvaluateTask.scala:117) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1$$anonfun$apply$3.apply(EvaluateTask.scala:116) ~[na:na]
+	at scala.Option$WithFilter.map(Option.scala:206) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1.apply(EvaluateTask.scala:116) ~[na:na]
+	at sbt.EvaluateTask$$anonfun$apply$1.apply(EvaluateTask.scala:115) ~[na:na]
+	at sbt.EvaluateTask$.withStreams(EvaluateTask.scala:153) ~[na:na]
+	at sbt.EvaluateTask$.apply(EvaluateTask.scala:115) ~[na:na]
+	at sbt.Project$.runTask(Project.scala:445) ~[na:na]
+	at sbt.Project$.runTask(Project.scala:441) ~[na:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:295) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:104) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[na:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[na:na]
+	at com.typesafe.trace.FutureRunnable.run(FutureTrace.scala:119) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[na:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[na:na]
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[na:1.7.0_03]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:791) ~[na:1.7.0_03]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[na:1.7.0_03]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449) ~[na:1.7.0_03]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71) ~[na:1.7.0_03]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[na:1.7.0_03]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355) ~[na:1.7.0_03]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.7.0_03]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354) ~[na:1.7.0_03]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:423) ~[na:1.7.0_03]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:356) ~[na:1.7.0_03]
+	at scala.tools.nsc.backend.opt.ClosureElimination$ClosureElim.<init>(ClosureElimination.scala:93) ~[na:na]
+	at scala.tools.nsc.backend.opt.ClosureElimination$ClosureEliminationPhase.<init>(ClosureElimination.scala:73) ~[na:na]
+	at scala.tools.nsc.backend.opt.ClosureElimination.newPhase(ClosureElimination.scala:23) ~[na:na]
+	at scala.tools.nsc.backend.opt.ClosureElimination.newPhase(ClosureElimination.scala:15) ~[na:na]
+	at scala.tools.nsc.Global$Run$$anonfun$27.apply(Global.scala:1310) ~[na:na]
+	at scala.tools.nsc.Global$Run$$anonfun$27.apply(Global.scala:1310) ~[na:na]
+	at scala.collection.LinearSeqOptimized$class.foldLeft(LinearSeqOptimized.scala:111) ~[na:na]
+	at scala.collection.immutable.List.foldLeft(List.scala:84) ~[na:na]
+	at scala.tools.nsc.Global$Run.<init>(Global.scala:1310) ~[na:na]
+	at xsbt.CachedCompiler0$$anon$2.<init>(CompilerInterface.scala:113) ~[na:na]
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:113) ~[na:na]
+	at xsbt.CachedCompiler0.run(CompilerInterface.scala:99) ~[na:na]
+	at xsbt.CompilerInterface.run(CompilerInterface.scala:27) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_03]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_03]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_03]
+	at java.lang.reflect.Method.invoke(Method.java:601) ~[na:1.7.0_03]
+	at sbt.compiler.AnalyzingCompiler.call(AnalyzingCompiler.scala:102) ~[na:na]
+	at sbt.compiler.AnalyzingCompiler.compile(AnalyzingCompiler.scala:48) ~[na:na]
+	at sbt.compiler.AnalyzingCompiler.compile(AnalyzingCompiler.scala:41) ~[na:na]
+	at sbt.compiler.AggressiveCompile$$anonfun$3$$anonfun$compileScala$1$1.apply$mcV$sp(AggressiveCompile.scala:98) ~[na:na]
+
+2014-08-23 09:10:19,002 - [ERROR] - from play.nettyException in New I/O worker #2 
+Exception caught in Netty
+java.lang.OutOfMemoryError: PermGen space
 

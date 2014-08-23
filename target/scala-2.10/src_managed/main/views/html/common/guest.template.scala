@@ -65,7 +65,7 @@ Seq[Any](format.raw/*1.32*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Tue Apr 01 19:34:48 ALMT 2014
+                    DATE: Sat Aug 23 09:08:19 ALMT 2014
                     SOURCE: G:/Play/Restaurant Database/app/views/common/guest.scala.html
                     HASH: b786d786f9e5bbe7cef1909fbbdc9c3abe3fd348
                     MATRIX: 786->1|910->31|986->73|1000->79|1033->91|1335->358|1364->365|1408->374|1422->380|1453->389
