@@ -97,7 +97,7 @@ Seq[Any](format.raw/*2.1*/("""<html class="full" lang="en">
                 </div>
                 <div class="col-md-6 column">
                     <h3>
-                        Hangout where you are<br>supposed to!
+                        Hangout where you aresupposed to!
                     </h3>
                     <div class="row clearfix">
                         <div class="col-md-6 column">
@@ -134,10 +134,10 @@ Seq[Any](format.raw/*2.1*/("""<html class="full" lang="en">
 }
                 /*
                     -- GENERATED --
-                    DATE: Sat Aug 23 09:10:05 ALMT 2014
+                    DATE: Sat Aug 23 10:53:15 ALMT 2014
                     SOURCE: G:/Play/Restaurant Database/app/views/isdrun/home.scala.html
-                    HASH: 60207bb5fc6c50e06ca95cee5953af65c5708b88
-                    MATRIX: 861->1|1392->496|1407->502|1472->545|1570->607|1585->613|1652->658|4219->3189|4234->3195|4298->3237|4396->3299|4411->3305|4475->3347
+                    HASH: 7859b9749a3752e30170289635739b62ce746cd0
+                    MATRIX: 861->1|1392->496|1407->502|1472->545|1570->607|1585->613|1652->658|4215->3185|4230->3191|4294->3233|4392->3295|4407->3301|4471->3343
                     LINES: 29->2|43->16|43->16|43->16|46->19|46->19|46->19|117->90|117->90|117->90|120->93|120->93|120->93
                     -- GENERATED --
                 */

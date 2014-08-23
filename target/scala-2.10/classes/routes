@@ -32,3 +32,4 @@ GET		/showRestaurant				controllers.VisitorEnd.index()
 #isdrun
 
 GET     /home                       controllers.isdrun.home.index()
+GET     /User/:user                 controllers.isdrun.User.index(user: String)

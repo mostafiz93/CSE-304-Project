@@ -1,6 +1,6 @@
 // @SOURCE:G:/Play/Restaurant Database/conf/routes
-// @HASH:258458ddeaef454f25254d595ab20435571d3dc3
-// @DATE:Sat Aug 23 09:08:16 ALMT 2014
+// @HASH:5fbe795621abd0fa7ffe1a07573e16c22636e856
+// @DATE:Sat Aug 23 10:54:11 ALMT 2014
 
 
 import play.core._
@@ -99,7 +99,11 @@ private[this] lazy val controllers_VisitorEnd_index16 = Route("GET", PathPattern
 // @LINE:34
 private[this] lazy val controllers_isdrun_home_index17 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home"))))
         
-def documentation = List(("""GET""", prefix,"""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """webjars/$file<.+>""","""controllers.WebJarAssets.at(file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addnewRestaurant""","""controllers.restaurant.RestaurantController.createRestaurant()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newRestaurant""","""controllers.restaurant.RestaurantController.addRestaurant()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showProfile/$id<[^/]+>""","""controllers.restaurant.RestaurantController.showRestaurantProfile(id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """viewRestaurants""","""controllers.restaurant.RestaurantController.showAllRestaurant()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createFranchise""","""controllers.franchise.FranchiseController.createFranchise()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newFranchise""","""controllers.franchise.FranchiseController.addNewFranhcise()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addInMenu/$id<[^/]+>""","""controllers.restaurant.RestaurantFoodController.addFoodInMenu(id:Long)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addedInMenu/$id<[^/]+>""","""controllers.restaurant.RestaurantFoodController.addFoodInRestaurant(id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addNewItem""","""controllers.foods.FoodController.addNewFood()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addedFood""","""controllers.foods.FoodController.saveFood()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signUp""","""controllers.VisitorEnd.signUp()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signIn""","""controllers.VisitorEnd.signIn()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """visitor""","""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showRestaurant""","""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home""","""controllers.isdrun.home.index()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:35
+private[this] lazy val controllers_isdrun_User_index18 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("User/"),DynamicPart("user", """[^/]+""",true))))
+        
+def documentation = List(("""GET""", prefix,"""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """webjars/$file<.+>""","""controllers.WebJarAssets.at(file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addnewRestaurant""","""controllers.restaurant.RestaurantController.createRestaurant()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newRestaurant""","""controllers.restaurant.RestaurantController.addRestaurant()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showProfile/$id<[^/]+>""","""controllers.restaurant.RestaurantController.showRestaurantProfile(id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """viewRestaurants""","""controllers.restaurant.RestaurantController.showAllRestaurant()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """createFranchise""","""controllers.franchise.FranchiseController.createFranchise()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """newFranchise""","""controllers.franchise.FranchiseController.addNewFranhcise()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addInMenu/$id<[^/]+>""","""controllers.restaurant.RestaurantFoodController.addFoodInMenu(id:Long)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addedInMenu/$id<[^/]+>""","""controllers.restaurant.RestaurantFoodController.addFoodInRestaurant(id:Long)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addNewItem""","""controllers.foods.FoodController.addNewFood()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """addedFood""","""controllers.foods.FoodController.saveFood()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signUp""","""controllers.VisitorEnd.signUp()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """signIn""","""controllers.VisitorEnd.signIn()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """visitor""","""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """showRestaurant""","""controllers.VisitorEnd.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home""","""controllers.isdrun.home.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """User/$user<[^/]+>""","""controllers.isdrun.User.index(user:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]] 
 }}
@@ -247,6 +251,14 @@ case controllers_VisitorEnd_index16(params) => {
 case controllers_isdrun_home_index17(params) => {
    call { 
         invokeHandler(controllers.isdrun.home.index(), HandlerDef(this, "controllers.isdrun.home", "index", Nil,"GET", """""", Routes.prefix + """home"""))
+   }
+}
+        
+
+// @LINE:35
+case controllers_isdrun_User_index18(params) => {
+   call(params.fromPath[String]("user", None)) { (user) =>
+        invokeHandler(controllers.isdrun.User.index(user), HandlerDef(this, "controllers.isdrun.User", "index", Seq(classOf[String]),"GET", """""", Routes.prefix + """User/$user<[^/]+>"""))
    }
 }
         

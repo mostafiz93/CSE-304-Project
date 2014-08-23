@@ -1,6 +1,6 @@
 // @SOURCE:G:/Play/Restaurant Database/conf/routes
-// @HASH:258458ddeaef454f25254d595ab20435571d3dc3
-// @DATE:Sat Aug 23 09:08:16 ALMT 2014
+// @HASH:5fbe795621abd0fa7ffe1a07573e16c22636e856
+// @DATE:Sat Aug 23 10:54:11 ALMT 2014
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -155,8 +155,22 @@ case () if true => Call("GET", _prefix + { _defaultPrefix } + "showRestaurant")
 }
                   
 
+// @LINE:35
 // @LINE:34
 package controllers.isdrun {
+
+// @LINE:35
+class ReverseUser {
+    
+
+// @LINE:35
+def index(user:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "User/" + implicitly[PathBindable[String]].unbind("user", dynamicString(user)))
+}
+                                                
+    
+}
+                          
 
 // @LINE:34
 class Reversehome {
@@ -421,8 +435,27 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
 }
         
 
+// @LINE:35
 // @LINE:34
 package controllers.isdrun.javascript {
+
+// @LINE:35
+class ReverseUser {
+    
+
+// @LINE:35
+def index : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.isdrun.User.index",
+   """
+      function(user) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "User/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("user", encodeURIComponent(user))})
+      }
+   """
+)
+                        
+    
+}
+              
 
 // @LINE:34
 class Reversehome {
@@ -649,9 +682,23 @@ def index(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
         
 
+// @LINE:35
 // @LINE:34
 package controllers.isdrun.ref {
 
+
+// @LINE:35
+class ReverseUser {
+    
+
+// @LINE:35
+def index(user:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.isdrun.User.index(user), HandlerDef(this, "controllers.isdrun.User", "index", Seq(classOf[String]), "GET", """""", _prefix + """User/$user<[^/]+>""")
+)
+                      
+    
+}
+                          
 
 // @LINE:34
 class Reversehome {
